@@ -1,0 +1,1469 @@
+INFO - 2023-05-18 04:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 04:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-18 06:19:22 --> Config\Security::$csrfProtection is set to 'cookie'. Same-site attackers may bypass the CSRF protection. Please set it to 'session'.
+in APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php on line 96.
+ 1 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(84): CodeIgniter\Shield\Authentication\Authenticators\Session->checkSecurityConfig()
+ 2 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authentication.php(58): CodeIgniter\Shield\Authentication\Authenticators\Session->__construct(Object(CodeIgniter\Shield\Models\UserModel))
+ 3 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(67): CodeIgniter\Shield\Authentication\Authentication->factory('session')
+ 4 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(59): CodeIgniter\Shield\Auth->getAuthenticator()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(221): CodeIgniter\Shield\Collectors\Auth->getTitleDetails()
+ 6 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+ 7 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684390761.823514, 0.8785, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 9 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+10 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:21:05 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684390865.3237, 0.0731, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:21:05 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684390865.323698, 0.0731, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:21:45 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684390905.4245, 0.0887, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:21:45 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684390905.424466, 0.0887, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:26:19 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391178.892, 0.1025, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:26:19 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391178.89201, 0.1025, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:26:20 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391180.0529, 0.0651, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:26:20 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391180.05289, 0.0651, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:27:53 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391273.6617, 0.0706, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:27:53 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391273.66168, 0.0706, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:28:21 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391301.8443, 0.0714, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:28:21 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391301.844344, 0.0714, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:29:01 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391341.8771, 0.0699, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:29:01 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391341.877077, 0.0699, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:29:03 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391343.1398, 0.0692, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:29:03 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391343.139824, 0.0692, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-18 06:29:14 --> Class "CodeIgniter\Shield\Authentication\Authenticators\Session" not found
+in APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authentication.php on line 58.
+ 1 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(67): CodeIgniter\Shield\Authentication\Authentication->factory('session')
+ 2 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(59): CodeIgniter\Shield\Auth->getAuthenticator()
+ 3 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(221): CodeIgniter\Shield\Collectors\Auth->getTitleDetails()
+ 4 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+ 5 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684391354.65656, 0.0723, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 6 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 8 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:44:37 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392276.6095, 0.334, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:44:37 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392276.609472, 0.334, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:45:05 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392305.3061, 0.0856, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:45:05 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392305.306103, 0.0856, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:49:42 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392582.4873, 0.0858, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:49:42 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392582.487269, 0.0858, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:49:43 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392583.396, 0.0497, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:49:43 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392583.396023, 0.0497, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:50:50 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392650.4949, 0.054, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:50:50 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392650.49492, 0.054, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-18 06:52:27 --> Config\Security::$csrfProtection is set to 'cookie'. Same-site attackers may bypass the CSRF protection. Please set it to 'session'.
+in APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php on line 96.
+ 1 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(84): CodeIgniter\Shield\Authentication\Authenticators\Session->checkSecurityConfig()
+ 2 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authentication.php(58): CodeIgniter\Shield\Authentication\Authenticators\Session->__construct(Object(CodeIgniter\Shield\Models\UserModel))
+ 3 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(67): CodeIgniter\Shield\Authentication\Authentication->factory('session')
+ 4 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(59): CodeIgniter\Shield\Auth->getAuthenticator()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(221): CodeIgniter\Shield\Collectors\Auth->getTitleDetails()
+ 6 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+ 7 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392747.438274, 0.0487, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 9 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+10 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 06:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 06:54:00 --> mysqli_sql_exception: Table 'crud.settings' doesn't exist in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392840.2544, 0.0493, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 06:54:00 --> Table 'crud.settings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684392840.25436, 0.0493, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:01:14 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393274.2346, 0.0679, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:01:14 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393274.234617, 0.0679, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:05:05 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393504.9254, 0.068, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:05:05 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393504.925409, 0.068, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:06:05 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393565.8173, 0.0735, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:06:05 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393565.817287, 0.0735, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('/', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:07:20 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('course', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:07:22 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('course', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:09:32 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('course', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:09:33 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('course', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:09:33 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('course', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:09:34 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('course', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+CRITICAL - 2023-05-18 07:10:13 --> "auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:10:57 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393857.0394, 0.1477, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:10:57 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393857.039402, 0.1477, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:11:45 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393905.2156, 0.078, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:11:45 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393905.215602, 0.078, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:11:50 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393910.6959, 0.076, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:11:50 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684393910.695911, 0.076, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-18 07:17:02 --> Config\Security::$csrfProtection is set to 'cookie'. Same-site attackers may bypass the CSRF protection. Please set it to 'session'.
+in APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php on line 96.
+ 1 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(84): CodeIgniter\Shield\Authentication\Authenticators\Session->checkSecurityConfig()
+ 2 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authentication.php(58): CodeIgniter\Shield\Authentication\Authenticators\Session->__construct(Object(CodeIgniter\Shield\Models\UserModel))
+ 3 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(67): CodeIgniter\Shield\Authentication\Authentication->factory('session')
+ 4 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(59): CodeIgniter\Shield\Auth->getAuthenticator()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(221): CodeIgniter\Shield\Collectors\Auth->getTitleDetails()
+ 6 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+ 7 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684394222.05512, 0.0832, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 9 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+10 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('course', 'after')
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 07:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-18 07:19:22 --> Config\Security::$csrfProtection is set to 'cookie'. Same-site attackers may bypass the CSRF protection. Please set it to 'session'.
+in APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php on line 96.
+ 1 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(84): CodeIgniter\Shield\Authentication\Authenticators\Session->checkSecurityConfig()
+ 2 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authentication.php(58): CodeIgniter\Shield\Authentication\Authenticators\Session->__construct(Object(CodeIgniter\Shield\Models\UserModel))
+ 3 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(67): CodeIgniter\Shield\Authentication\Authentication->factory('session')
+ 4 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(59): CodeIgniter\Shield\Auth->getAuthenticator()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(221): CodeIgniter\Shield\Collectors\Auth->getTitleDetails()
+ 6 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+ 7 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684394362.380937, 0.0783, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 9 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+10 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user_login', 'after')
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 07:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-18 07:20:39 --> mysqli_sql_exception: Unknown column 'context' in 'where clause' in C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shi...', 'sessionConfig', NULL)
+#7 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionCon...')
+#9 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\app\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684394439.4582, 0.0657, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user_login', 'after')
+#20 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#22 C:\Users\Yasit\Desktop\Bhasha\CI-AJAX\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\...')
+#23 {main}
+CRITICAL - 2023-05-18 07:20:39 --> Unknown column 'context' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('CodeIgniter\\Shield\\Config\\Auth', 'sessionConfig', null)
+ 8 APPPATH\ThirdParty\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(24): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(689): setting('Auth.sessionConfig')
+10 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(707): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(394): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(378): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Auth.php(164): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH\ThirdParty\vendor\codeigniter4\shield\src\Collectors\Auth.php(67): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(222): CodeIgniter\Shield\Collectors\Auth->display()
+16 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+17 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1684394439.458234, 0.0657, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+18 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+19 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+20 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user_login', 'after')
+21 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-18 08:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 08:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-18 09:53:28 --> chandula22kkkk2023-05-09kalutara0718345656CSSCSS
+INFO - 2023-05-18 09:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-18 09:54:11 --> Yasithaaaachandqqq2023-05-03Payagala0713546767cssCSSS
+INFO - 2023-05-18 09:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-18 09:54:47 -->   25
+INFO - 2023-05-18 09:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 09:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-18 10:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

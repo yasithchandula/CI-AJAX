@@ -29,9 +29,37 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'userController::loginController');
+// $routes->get('userreg','userController::regView');
 
-$routes->get('student','studentController::index');
+$routes->get('student','studentController::index',['filter'=>'auth']);
+$routes->post('student_store','studentController::store',['filter'=>'auth']);
+$routes->get('student_fetch','studentController::fetch',['filter'=>'auth']);
+$routes->post('student_edit','studentController::edit',['filter'=>'auth']);
+$routes->post('student_update','studentController::update',['filter'=>'auth']);
+$routes->post('student_delete','studentController::delete',['filter'=>'auth']);
+
+$routes->get('course','courseController::index',['filter'=>'auth']);
+$routes->post('course_store','courseController::store',['filter'=>'auth']);
+$routes->get('course_fetch','courseController::fetch',['filter'=>'auth']);
+$routes->post('course_edit','courseController::edit',['filter'=>'auth']);
+$routes->post('course_update','courseController::update',['filter'=>'auth']);
+$routes->post('course_delete','courseController::delete',['filter'=>'auth']);
+
+/**
+ * User Routes
+ */
+$routes->get('userreg','userController::regView');
+$routes->post('user_store','userController::saveUser');
+$routes->get('user_login','userController::loginController',);
+$routes->get('user_index','userController::userIndex',['filter'=>'auth']);
+$routes->get('/','userController::loginController');
+$routes->post('user_logger','LoginController::login');
+$routes->get('user_logout','LoginController::logout');
+$routes->get('usercheck','LoginController::checkSession');
+
+
+
 
 
 /*

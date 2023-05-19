@@ -5,5 +5,10 @@
             "name": "yasith"
         }
     ],
-    "require": {}
+    "require": {
+        "firebase/php-jwt": "6.4",
+        "codeigniter4/shield": "^1.0@beta"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
