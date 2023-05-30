@@ -54,7 +54,7 @@ $routes->post('course_delete','courseController::delete',['filter'=>'auth']);
  */
 $routes->get('userreg','userController::regView',);
 $routes->post('user_store','userController::saveUser',['filter'=>'reguser']);
-$routes->get('public/index.php','userController::loginController',);
+$routes->get('user_login','userController::loginController',);
 $routes->get('user_index','userController::userIndex',['filter'=>'auth']);
 $routes->get('/','userController::loginController');
 $routes->post('user_logger','LoginController::login',['filter'=>'loginval']);
