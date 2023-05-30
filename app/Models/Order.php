@@ -179,7 +179,7 @@ class Order extends Model
 
                     $dbData=[
                         'status'=>$data['status_code'],
-                        'recurring'=>$data['recurring '],
+                        'recurring'=>$data['recurring'],
                         'message_type'=>$data['message_type'],
                         'item_recurrence'=>$data['item_recurrence'],
                         'item_duration'=>$data['item_duration'],
@@ -207,6 +207,17 @@ class Order extends Model
                     $builder->where('order_id',$data['order_id'])->update($dbData);
 
 
+                }
+                else{
+
+                    $dbData=[
+                        'status'=>$data['status_code'],
+                        'status_message'=>$data['status_message'],
+                        'amount'=>$data['payhere_amount'],
+                    ];
+
+                    log_message("alert",json_encode($data));
+                    $builder->where('order_id',$data['order_id'])->update($dbData);
                 }
 
 
@@ -290,7 +301,7 @@ class Order extends Model
 
         $data=(array)$builder->select('order_id,order_title,amount,customer_token')
         ->where('order_id',$order_id)->get()->getRow();
-        
+
         $data['Authorization']=getenv('ACCESS_TOKEN');
 
         log_message('alert',json_encode($data));

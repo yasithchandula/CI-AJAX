@@ -142,6 +142,10 @@
                         <div class="input_hidden">
 
                         </div>
+                        <br>
+                        <label>Pay with Javascript SDK : </label>
+                        <button type="button" class="btn btn-danger js_preapproval"> Pay With JS PR</button>
+                        <br>...
                         
                         <div class="modal-footer">
                             <button type="submit"  class="btn btn-danger">Confirm Payment</button>
@@ -305,7 +309,10 @@
             $('#preapproval_payment').modal('show');
         })
 
-        //JS SDK Implementation
+        
+        /**
+         * - checkout js sdk
+         */
         
         $(document).on('click','#payhere-payment',function(){
 
@@ -338,6 +345,43 @@
             payhere.startPayment(payment);
             delete(payment);
         });
+
+        /**
+         * - preapproval sdk 
+         */
+
+        $(document).on('click','.js_preapproval',function(){
+
+        var payment = {
+            "preapprove":true,
+            "merchant_id": $('#js_merchant_id').val(),    // Replace your Merchant ID
+            "return_url": $('#js_return_url').val(),     // Important
+            "cancel_url": $('#js_cancel_url').val(),     // Important
+            "notify_url": $('#js_notify_url').val(),
+            "order_id": $('#js_order_id').val(),
+            "items": $('#js_items').val(),
+            "amount": $('#js_amount').val(),
+            "currency": $('#js_currency').val(),
+            "hash": $('#js_hash').val(), // *Replace with generated hash retrieved from backend
+            "first_name":$('#js_first_name').val(),
+            "last_name": $('#js_last_name').val(),
+            "email": $('#js_email').val(),
+            "phone": $('#js_phone').val(),
+            "address": $('#js_address').val(),
+            "city": $('#js_city').val(),
+            "country": $('#js_country').val(),
+            "delivery_address": $('#js_address').val(),
+            "delivery_city": $('#js_city').val(),
+            "delivery_country": $('#js_country').val(),
+            "custom_1": "",
+            "custom_2": ""
+        };
+
+        console.log();
+        payhere.startPayment(payment);
+        delete(payment);
+        });
+
 
 
 
