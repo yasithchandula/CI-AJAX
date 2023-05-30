@@ -168,3 +168,5 @@ ALERT - 2023-05-30 11:53:24 --> Array
 
 )
 
+INFO - 2023-05-30 12:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-30 12:02:37 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"}]}

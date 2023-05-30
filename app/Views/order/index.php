@@ -157,7 +157,7 @@
         function preapprovedOrders(){
             $.ajax({
                 method:"GET",
-                url:"preorders",
+                url:"order/preorders",
                 success:function(response){
                     console.log(response.order);
                     $.each(response.order,function(key,value){
