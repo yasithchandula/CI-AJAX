@@ -1,0 +1,30 @@
+INFO - 2023-05-29 12:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-29 12:22:49 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"}]}
+ALERT - 2023-05-29 12:22:52 --> 179
+ALERT - 2023-05-29 12:22:52 --> {"0":{"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6"},"Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:22:52 --> {"0":{"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6"},"Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:22:52 --> 179
+ALERT - 2023-05-29 12:22:52 --> {"0":{"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6"},"Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+INFO - 2023-05-29 12:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-29 12:24:26 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"}]}
+ALERT - 2023-05-29 12:24:31 --> 179
+CRITICAL - 2023-05-29 12:24:31 --> Cannot use object of type stdClass as array
+in APPPATH\Models\Order.php on line 293.
+ 1 APPPATH\Controllers\OrderController.php(137): App\Models\Order->toPayhereChargin('179')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->payhereCharging()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-29 12:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-29 12:24:59 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"}]}
+ALERT - 2023-05-29 12:25:04 --> 185
+ALERT - 2023-05-29 12:25:04 --> {"order_id":"185","order_title":"DIPSN","amount":"2500","customer_token":"ED412E5AF2EC8318DE9015C74AF919B3","Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:25:04 --> {"order_id":"185","order_title":"DIPSN","amount":"2500","customer_token":"ED412E5AF2EC8318DE9015C74AF919B3","Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:25:04 --> 185
+ALERT - 2023-05-29 12:25:04 --> {"order_id":"185","order_title":"DIPSN","amount":"2500","customer_token":"ED412E5AF2EC8318DE9015C74AF919B3","Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:25:12 --> 186
+ALERT - 2023-05-29 12:25:13 --> {"order_id":"186","order_title":"BScCNSE","amount":"1500","customer_token":"14D61128AB70399B5C7B4D2B4B0F93B9","Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:25:13 --> {"order_id":"186","order_title":"BScCNSE","amount":"1500","customer_token":"14D61128AB70399B5C7B4D2B4B0F93B9","Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}
+ALERT - 2023-05-29 12:25:13 --> 186
+ALERT - 2023-05-29 12:25:13 --> {"order_id":"186","order_title":"BScCNSE","amount":"1500","customer_token":"14D61128AB70399B5C7B4D2B4B0F93B9","Authorization":"ab8c69c4-7b19-44b0-b360-039e5e097a72"}

@@ -2,7 +2,7 @@
 
 <?=$this->section('content') ?>
     <div class="container">
-    <h2 style="text-align: center;">Course Management</h2>
+    <h2 style="text-align: center;">Student Management</h2>
     <br>
         <div class="row">
             <div class="col md-12">
@@ -21,8 +21,10 @@
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Birthday</th>
+                    <th scope="col">Email</th>
                     <th scope="col">Contact No</th>
                     <th scope="col">Address</th>
+                    <th scope="col">City</th>
                     <th scope="col">Department</th>
                     <th scope="col">Course</th>
                 </tr>
@@ -62,9 +64,19 @@
                             <input type="date" class="form-control birthday" max="<?php echo date("Y-m-d");?>" name="birhtday">
                         </div>
                         <div class="form-group">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <span id='error_email' class='text-danger ms-3'></span>
+                            <input type="text" class="form-control email" name="email">
+                        </div>
+                        <div class="form-group">
                             <label for="inputAddress" class="form-label">Address</label>
                             <span id='error_address' class='text-danger ms-3'></span>
                             <input type="text" class="form-control address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCity" class="form-label">City</label>
+                            <span id='error_city' class='text-danger ms-3'></span>
+                            <input type="text" class="form-control city" name="city">
                         </div>
                         <div class="form-group">
                             <label for="inputContact" class="form-label">Contact No</label>
@@ -122,9 +134,19 @@
                             <input type="date" id="birthday" class="form-control birthday" max="<?php echo date("Y-m-d");?>">
                         </div>
                         <div class="form-group">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <span id='error_email' class='text-danger ms-3'></span>
+                            <input type="text" id="email" class="form-control email">
+                        </div>
+                        <div class="form-group">
                             <label for="inputAddress" class="form-label">Address</label>
                             <span id='error_address' class='text-danger ms-3'></span>
                             <input type="text" id="address" class="form-control address">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCity" class="form-label">City</label>
+                            <span id='error_city' class='text-danger ms-3'></span>
+                            <input type="text" id="city" class="form-control city">
                         </div>
                         <div class="form-group">
                             <label for="inputContact" class="form-label">Contact No</label>
@@ -190,6 +212,15 @@
                     $('#error_birthday').text(error_birthday);
                 }
 
+                if($.trim($('.email').val()).length==0){
+                    error_email='Please Enter email';
+                    $('#error_email').text(error_email);
+                }
+                else{
+                    error_email='';
+                    $('#error_email').text(error_email);
+                }
+
                 if($.trim($('.address').val()).length==0){
                     error_address='Please Enter address';
                     $('#error_address').text(error_address);
@@ -197,6 +228,15 @@
                 else{
                     error_address='';
                     $('#error_address').text(error_address);
+                }
+
+                if($.trim($('.city').val()).length==0){
+                    error_city='Please Enter city';
+                    $('#error_city').text(error_city);
+                }
+                else{
+                    error_city='';
+                    $('#error_city').text(error_city);
                 }
 
                 if($.trim($('.contactNumber').val()).length==0){
@@ -226,7 +266,7 @@
                     $('#error_course').text(error_course);
                 }
 
-                if(error_address!=''||error_birthday!=''||error_contactNumber!=''||error_course!=''||error_department!=''||error_firstName!=''||error_lastName!=''){
+                if(error_address!=''||error_birthday!=''||error_contactNumber!=''||error_course!=''||error_department!=''||error_firstName!=''||error_lastName!=''||error_city!=''||error_email!=''){
                     return false;
                 }
                 else{
@@ -235,7 +275,9 @@
                         'firstName':$('.firstName').val(),
                         'lastName':$('.lastName').val(),
                         'birthday':$('.birthday').val(),
+                        'email':$('.email').val(),
                         'address':$('.address').val(),
+                        'city':$('.city').val(),
                         'contactNumber':$('.contactNumber').val(),
                         'course':$('.course').val(),
                         'department':$('.department').val(),
@@ -297,7 +339,9 @@
                         $('#firstName').val(value['firstName']);
                         $('#lastName').val(value['lastName']);
                         $('#birthday').val(value['birthday']);
+                        $('#email').val(value['email']);
                         $('#address').val(value['address']);
+                        $('#city').val(value['city']);
                         $('#contactNumber').val(value['contactNumber']);
                         $('#department').val(value['department']);
                         $('#course').val(value['course']);
@@ -324,7 +368,9 @@
                         'firstName':$('#firstName').val(),
                         'lastName':$('#lastName').val(),
                         'birthday':$('#birthday').val(),
+                        'email':$('#email').val(),
                         'address':$('#address').val(),
+                        'city':$('#city').val(),
                         'contactNumber':$('#contactNumber').val(),
                         'course':$('#course').val(),
                         'department':$('#department').val(),
@@ -406,7 +452,7 @@
                 method:"GET",
                 url:"student_fetch",
                 success:function(response){
-                    console.log(response.student);
+                    console.log(response);
 
                     $.each(response.student,function(key,value){
                         $('.studentdata').append('<tr>\
@@ -414,8 +460,10 @@
                         <td>'+value['firstName']+'</td>\
                         <td>'+value['lastName']+'</td>\
                         <td>'+value['birthday']+'</td>\
+                        <td>'+value['email']+'</td>\
                         <td>'+value['contactNumber']+'</td>\
                         <td>'+value['address']+'</td>\
+                        <td>'+value['city']+'</td>\
                         <td>'+value['department']+'</td>\
                         <td>'+value['course']+'</td>\
                         <td> <a href="#" class="badge btn btn-primary edit-btn">Edit</a>\

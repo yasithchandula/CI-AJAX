@@ -2,6 +2,9 @@
 
 namespace Config;
 
+use App\Controllers\ClientController;
+use App\Controllers\OrderController;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -40,7 +43,7 @@ $routes->post('student_update','studentController::update',['filter'=>'auth']);
 $routes->post('student_delete','studentController::delete',['filter'=>'auth']);
 
 $routes->get('course','courseController::index',['filter'=>'auth']);
-$routes->post('course_store','courseController::store',['filter'=>'auth']);
+$routes->post('course_store','courseController::store',['filter'=>'course','auth']);
 $routes->get('course_fetch','courseController::fetch',['filter'=>'auth']);
 $routes->post('course_edit','courseController::edit',['filter'=>'auth']);
 $routes->post('course_update','courseController::update',['filter'=>'auth']);
@@ -49,14 +52,41 @@ $routes->post('course_delete','courseController::delete',['filter'=>'auth']);
 /**
  * User Routes
  */
-$routes->get('userreg','userController::regView');
-$routes->post('user_store','userController::saveUser');
+$routes->get('userreg','userController::regView',);
+$routes->post('user_store','userController::saveUser',['filter'=>'reguser']);
 $routes->get('user_login','userController::loginController',);
 $routes->get('user_index','userController::userIndex',['filter'=>'auth']);
 $routes->get('/','userController::loginController');
-$routes->post('user_logger','LoginController::login');
+$routes->post('user_logger','LoginController::login',['filter'=>'loginval']);
 $routes->get('user_logout','LoginController::logout');
 $routes->get('usercheck','LoginController::checkSession');
+
+
+/**
+ * client routes
+ */
+
+ $routes->get('clientlogin','ClientController::index');
+ $routes->post('client/login','ClientController::logger');
+ $routes->get('client/index','ClientController::indexView');
+ $routes->get('client/course_fetch','courseController::fetch',['filter'=>'auth']);
+ $routes->post('client/client_pay','OrderController::clientPay');
+ $routes->post('client/course_edit','OrderController::payClick');
+ $routes->post('client/verifyOrder','OrderController::verifyOrder');
+ $routes->get('client/return','OrderController::returnOrder');
+
+ /**
+  * Order routes
+  */
+
+  $routes->get('order/preorders','OrderController::fetchPreOrders');
+  $routes->get('order/',"OrderController::index");
+  $routes->get('order/usercheck','LoginController::checkSession');
+  $routes->post('order/payhere_charging','OrderController::payhereCharging');
+
+
+
+
 
 
 

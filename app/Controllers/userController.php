@@ -27,18 +27,8 @@ class userController extends BaseController {
             'email'=>$this->request->getPost('email'),
             'password'=>$this->request->getPost('password')
         ];
+        //$password=$this->request->getPost('password');
 
-        $rules=[
-            'username'=>['required'],
-            'email'=>['required','valid_email'],
-            'password'=>['required'],
-        ];
-
-        if (! $this->validateData($data, $rules)) {
-
-            return redirect()->back()->with('errors', $this->validator->getErrors());
-
-        }else{
 
             $user=new User();
 
@@ -50,6 +40,11 @@ class userController extends BaseController {
                 $options=[
                     'cost'=>10
                 ];
+
+                /**
+                 * - can't use return of getPost() in password_hash. Says parameter should be string
+                 * - return of the getPost method recognized as an array
+                 */
                 
                 $password = [' ',$this->request->getPost('password')];
                 $pwstr= implode(' ',$password);
@@ -64,13 +59,13 @@ class userController extends BaseController {
 
                 }else{
 
-                    return redirect()->to(base_url('student_add'))->with('message', $data);
+                    return redirect()->to(base_url('userreg'))->with('message', $data);
                 }
                
 
             }
 
-        }
+        
      }
 
      public function loginController (){

@@ -7,10 +7,8 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Validation\Exceptions\ValidationException;
 use Config\Services;
-use CodeIgniter\HTTP\Response;
 
-
-class AuthFilter implements FilterInterface
+class LoginFilter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -29,9 +27,21 @@ class AuthFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (session('user')==null){
-            return redirect()->to(base_url('user_login'));
+        $validation=Services::validation();
+
+        $rules=[
+            'username'=>['required'],
+            'password'=>['required']
+        ];
+
+        $data=$request->getVar();
+
+        if (!($validation->setRules($rules)->run($data))){
+
+            return redirect()->to(base_url('user_login'))->with('errors',$validation->getErrors());
+
         }
+
     }
 
     /**

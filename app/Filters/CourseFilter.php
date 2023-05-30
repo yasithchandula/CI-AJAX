@@ -9,8 +9,7 @@ use CodeIgniter\Validation\Exceptions\ValidationException;
 use Config\Services;
 use CodeIgniter\HTTP\Response;
 
-
-class AuthFilter implements FilterInterface
+class CourseFilter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -29,9 +28,23 @@ class AuthFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (session('user')==null){
-            return redirect()->to(base_url('user_login'));
+        $validation=Services::validation();
+        $response=Services::response();
+
+        $rules=[
+            'cID'=>['required',],
+            'Department'=>['required'],
+            'Course'=>['required'],
+            'fee'=>['required','decimal'],
+        ];
+
+        if(!($validation->setRules($rules,$request->getVar()))){
+    
+            return $response->setJSON(['error'=>'course insertion unsuccessful']);;
+
         }
+
+
     }
 
     /**

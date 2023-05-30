@@ -1,0 +1,345 @@
+INFO - 2023-05-25 10:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:24:57 --> [{"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500"}]
+ALERT - 2023-05-25 10:24:57 --> [{"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500"}]
+INFO - 2023-05-25 10:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:26:20 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:26:20 --> []
+ALERT - 2023-05-25 10:26:20 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+INFO - 2023-05-25 10:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:31:00 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:31:00 --> null
+ALERT - 2023-05-25 10:31:00 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+INFO - 2023-05-25 10:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:31:47 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:31:47 --> null
+ALERT - 2023-05-25 10:31:47 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+INFO - 2023-05-25 10:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:33:38 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:33:38 --> "19"
+ALERT - 2023-05-25 10:33:38 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha"}]
+INFO - 2023-05-25 10:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:36:29 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:36:29 --> [{"firstName":"Himasha"}]
+ALERT - 2023-05-25 10:36:29 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha"}]
+INFO - 2023-05-25 10:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:42:21 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:42:21 --> [{"sID":"19","firstName":"Himasha","lastName":"Perera","birthday":"2006-06-06","address":"Payagala","contactNumber":"711234567","department":"DTSS","course":"CTSSS","password":"$2y$10$ZbJw3g9cFPs5\/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy"}]
+ALERT - 2023-05-25 10:42:21 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"sID":"19","firstName":"Himasha","lastName":"Perera","birthday":"2006-06-06","address":"Payagala","contactNumber":"711234567","department":"DTSS","course":"CTSSS","password":"$2y$10$ZbJw3g9cFPs5\/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy"}]
+INFO - 2023-05-25 10:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:48:33 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:48:33 --> [{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 10:48:33 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 10:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 10:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 10:57:52 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}]
+ALERT - 2023-05-25 10:57:52 --> [{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:01:30 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:04:47 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 11:04:47 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:06:33 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 11:06:33 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:10:59 --> "[{\"id\":\"6\",\"cID\":\"IT100\",\"Department\":\"CNSE\",\"Course\":\"BScCNSE\",\"fee\":\"1500\"},{\"firstName\":\"Himasha\",\"lastName\":\"Perera\",\"contactNumber\":\"711234567\",\"address\":\"Payagala\"}]"
+ALERT - 2023-05-25 11:10:59 --> "[{\"id\":\"6\",\"cID\":\"IT100\",\"Department\":\"CNSE\",\"Course\":\"BScCNSE\",\"fee\":\"1500\"},{\"firstName\":\"Himasha\",\"lastName\":\"Perera\",\"contactNumber\":\"711234567\",\"address\":\"Payagala\"}]"
+INFO - 2023-05-25 11:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:13:07 --> 1
+ALERT - 2023-05-25 11:13:07 --> "[{\"id\":\"6\",\"cID\":\"IT100\",\"Department\":\"CNSE\",\"Course\":\"BScCNSE\",\"fee\":\"1500\"},{\"firstName\":\"Himasha\",\"lastName\":\"Perera\",\"contactNumber\":\"711234567\",\"address\":\"Payagala\"}]"
+ALERT - 2023-05-25 11:13:07 --> "[{\"id\":\"6\",\"cID\":\"IT100\",\"Department\":\"CNSE\",\"Course\":\"BScCNSE\",\"fee\":\"1500\"},{\"firstName\":\"Himasha\",\"lastName\":\"Perera\",\"contactNumber\":\"711234567\",\"address\":\"Payagala\"}]"
+INFO - 2023-05-25 11:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:13:10 --> 1
+ALERT - 2023-05-25 11:13:10 --> "[{\"id\":\"6\",\"cID\":\"IT100\",\"Department\":\"CNSE\",\"Course\":\"BScCNSE\",\"fee\":\"1500\"},{\"firstName\":\"Himasha\",\"lastName\":\"Perera\",\"contactNumber\":\"711234567\",\"address\":\"Payagala\"}]"
+ALERT - 2023-05-25 11:13:10 --> "[{\"id\":\"6\",\"cID\":\"IT100\",\"Department\":\"CNSE\",\"Course\":\"BScCNSE\",\"fee\":\"1500\"},{\"firstName\":\"Himasha\",\"lastName\":\"Perera\",\"contactNumber\":\"711234567\",\"address\":\"Payagala\"}]"
+INFO - 2023-05-25 11:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 11:17:19 --> array_merge(): Argument #3 must be of type array, bool given
+in APPPATH\Models\Order.php on line 184.
+ 1 APPPATH\Models\Order.php(184): array_merge([...], [...], true)
+ 2 APPPATH\Controllers\OrderController.php(71): App\Models\Order->clickPayBtn('19', 'IT100')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->payClick()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-25 11:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:17:44 --> 1
+ALERT - 2023-05-25 11:17:44 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 11:17:44 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:17:47 --> 1
+ALERT - 2023-05-25 11:17:47 --> [{"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 11:17:47 --> [{"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:18:05 --> 1
+ALERT - 2023-05-25 11:18:05 --> [{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 11:18:05 --> [{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 11:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:21:50 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+ALERT - 2023-05-25 11:21:50 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 11:24:26 --> "alsert" is an invalid log level.
+in SYSTEMPATH\Log\Logger.php on line 258.
+ 1 SYSTEMPATH\Log\Logger.php(258): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('alsert')
+ 2 SYSTEMPATH\Common.php(812): CodeIgniter\Log\Logger->log('alsert', '[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]', [])
+ 3 APPPATH\Models\Order.php(188): log_message('alsert', '[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]')
+ 4 APPPATH\Controllers\OrderController.php(71): App\Models\Order->clickPayBtn('19', 'IT100')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->payClick()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-25 11:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 11:24:29 --> "alsert" is an invalid log level.
+in SYSTEMPATH\Log\Logger.php on line 258.
+ 1 SYSTEMPATH\Log\Logger.php(258): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('alsert')
+ 2 SYSTEMPATH\Common.php(812): CodeIgniter\Log\Logger->log('alsert', '[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]', [])
+ 3 APPPATH\Models\Order.php(188): log_message('alsert', '[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]')
+ 4 APPPATH\Controllers\OrderController.php(71): App\Models\Order->clickPayBtn('19', 'IT100')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->payClick()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-25 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:24:54 --> [{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+ALERT - 2023-05-25 11:24:54 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:32:32 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:32:59 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:34:07 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:35:15 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:35:46 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:37:15 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:37:42 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:37:52 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:38:27 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:38:41 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:39:53 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:40:11 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:40:32 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:41:11 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:43:18 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:43:37 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:43:47 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:44:35 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:45:17 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:45:33 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:45:47 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:46:41 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:48:34 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:48:35 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:48:53 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:49:30 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:49:45 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:53:18 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:53:38 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:55:38 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:56:13 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:56:43 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:57:11 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:57:49 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:58:25 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:59:02 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 11:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 11:59:39 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:00:34 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:04:35 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:05:08 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:05:29 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:09:21 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:10:08 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:11:23 --> {"course":[{"id":"10","cID":"SE205","Department":"dsadsa","Course":"sdafsfd","fee":"2131120"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:12:15 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:14:00 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:14:11 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:14:35 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:14:50 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:15:35 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:15:39 --> {"course":[{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:25:12 --> [{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 12:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:25:43 --> [{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]
+INFO - 2023-05-25 12:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:26:31 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"}],"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:27:52 --> {"course":{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},"student":[{"firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}]}
+INFO - 2023-05-25 12:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 12:28:49 --> array_merge(): Argument #1 must be of type array, stdClass given
+in APPPATH\Models\Order.php on line 188.
+ 1 APPPATH\Models\Order.php(188): array_merge(Object(stdClass), Object(stdClass))
+ 2 APPPATH\Controllers\OrderController.php(71): App\Models\Order->clickPayBtn('19', 'IT100')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->payClick()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-25 12:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:29:50 --> {"id":"8","cID":"IT201","Department":"CSSE","Course":"BSc IN CS","fee":"1250","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:31:28 --> {"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:32:11 --> {"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:32:40 --> {"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 12:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:33:01 --> {"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:35:21 --> {"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:35:24 --> {"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 12:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 12:35:27 --> {"id":"10","cID":"SE205","Department":"dsadsa","Course":"sdafsfd","fee":"2131120","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 16:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 16:45:56 --> {"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
+INFO - 2023-05-25 16:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-25 16:56:05 --> {"id":"10","cID":"SE205","Department":"dsadsa","Course":"sdafsfd","fee":"2131120","firstName":"Himasha","lastName":"Perera","contactNumber":"711234567","address":"Payagala"}
