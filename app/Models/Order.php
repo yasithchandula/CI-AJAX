@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use App\Model\Course;
-use App\Model\Student;
+use App\Models\Course;
+use App\Models\Student;
 use CodeIgniter\Database\MySQLi\Builder;
+
 use CodeIgniter\Model;
 use Exception;
 
