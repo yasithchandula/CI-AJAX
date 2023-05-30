@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Controllers;
+use App\Controllers\BaseController;
+use App\Models\User;
+
 use Config\Services;
 use App\Model\Student;
 use App\Controllers\FormValidation;
-use App\Model\User;
 use CodeIgniter\Controller;
 use Throwable;
 

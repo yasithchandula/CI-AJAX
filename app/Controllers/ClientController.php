@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Model\Student;
+use App\Models\Student;
 
 class ClientController extends BaseController
 {

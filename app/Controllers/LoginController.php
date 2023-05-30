@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Controllers;
+use App\Controllers\BaseController;
+
 use Config\Services;
 use App\Model\Student;
 use App\Controllers\FormValidation;
-use App\Model\User;
+use App\Models\User;
 use CodeIgniter\Commands\Utilities\Environment;
 use CodeIgniter\Controller;
 use CodeIgniter\Shield\Config\Auth;

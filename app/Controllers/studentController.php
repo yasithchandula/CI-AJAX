@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
-use App\Model\Student;
+use App\Controllers\BaseController;
+use App\Models\Student;
 
 class studentController extends BaseController{
 

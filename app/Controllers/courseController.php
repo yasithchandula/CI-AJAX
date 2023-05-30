@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Controllers;
-use App\Model\Course;
+use App\Controllers\BaseController;
+use App\Models\Course;
 
 class courseController extends BaseController{
 
