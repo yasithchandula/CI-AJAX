@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => 'us-cdbr-east-06.cleardb.net',
+        'username' => 'bca2fb577d87a3',
+        'password' => '8c350fd9',
+        'database' => 'heroku_fc0d14e6dcb37c7',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -43,6 +43,7 @@ class Database extends Config
         'failover' => [],
         'port'     => 3306,
     ];
+
 
     /**
      * This database connection is used when

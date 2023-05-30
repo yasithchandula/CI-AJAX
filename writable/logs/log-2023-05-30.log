@@ -88,3 +88,44 @@ ALERT - 2023-05-30 11:02:05 --> Array
 INFO - 2023-05-30 11:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-05-30 11:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-05-30 11:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 11:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 11:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 11:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 11:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 11:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-30 11:32:03 --> Array
+(
+    [0] => stdClass Object
+        (
+            [sID] => 32
+            [firstName] => Yasith
+            [lastName] => Chandula
+            [email] => chandulayasith@gmail.com
+            [birthday] => 2023-05-01
+            [address] => Payagala
+            [city] => Kalutara
+            [contactNumber] => 0719682830
+            [department] => CSSE
+            [course] => BscInCS
+            [password] => $2y$10$ZbJw3g9cFPs5/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy
+        )
+
+    [1] => stdClass Object
+        (
+            [sID] => 33
+            [firstName] => Harith 
+            [lastName] => Silva
+            [email] => harith@gmail.com
+            [birthday] => 2023-05-02
+            [address] => Dodangoda
+            [city] => Kalutara
+            [contactNumber] => 0714436578
+            [department] => Eng
+            [course] => ECEng
+            [password] => 
+        )
+
+)
+
+INFO - 2023-05-30 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
