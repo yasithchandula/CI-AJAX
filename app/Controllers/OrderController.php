@@ -144,7 +144,7 @@ class OrderController extends BaseController
 
         $options=[
             'headers'=>['Authorization: Basic ' .$auth_code],
-            'body'=>['grant_type'=>'client_credentials'],
+            'body'=>json_encode(['grant_type'=>'client_credentials']),
         ];
 
 
@@ -165,6 +165,7 @@ class OrderController extends BaseController
 
         $auth = 'Bearer ' .$access_t;
         $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
+        print_r($url);
 
         $options = [
             'headers'=>['Authorization: '.$auth,
