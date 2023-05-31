@@ -143,7 +143,7 @@ class OrderController extends BaseController
         $data = $this->request->getVar();
         $auth = 'Bearer ' .getenv('ACCESS_TOKEN');
 
-        $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
+        $url = 'https://eokwyobr35ggdi5.m.pipedream.net';
 
         $options = [
             CURLOPT_RETURNTRANSFER => true, // Return the response instead of outputting it
