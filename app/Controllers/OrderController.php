@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Order;
+use CodeIgniter\HTTP\CURLRequest;
 use Config\Services;
 
 class OrderController extends BaseController
@@ -142,22 +143,21 @@ class OrderController extends BaseController
 
         $data = $this->request->getVar();
         $auth = 'Bearer ' .getenv('ACCESS_TOKEN');
-
         $url = 'https://eokwyobr35ggdi5.m.pipedream.net';
 
         $options = [
-            CURLOPT_RETURNTRANSFER => true, // Return the response instead of outputting it
-            CURLOPT_HTTPHEADER => ['Authorization: '.$auth,
-                                    'Content-Type: application/json'], // Set the request headers
-            CURLOPT_POSTFIELDS => json_encode($data), // Set the request payload
+            'headers'=>['Authorization: '.$auth,
+                        'Content-Type: application/json'], // Set the request headers
+            'body'=>json_encode($data),
         ];
         
         // Send the request
-        $curl=Services::curlrequest();
+        $curl=Services::curlrequest($options,);
 
         $response = $curl->request('POST',$url,$options);
 
-        return $this->response->setJSON($auth);
+        return $this->response->setJSON($response);
+        
 
 
 
