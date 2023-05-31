@@ -5,11 +5,14 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\Order;
 
-
 class OrderController extends BaseController
 {
+    public function index()
+    {
+        return view('order/index.php');
+    }
 
-    /**
+     /**
      * - Get client data from the post request and return the data with hash as json
      */
     public function clientPay()
@@ -113,22 +116,12 @@ class OrderController extends BaseController
         return $this->response->setJSON($p_order);
     }
 
-    /**
-     * - Return to index view of order
-     */
 
-    public function index(){
-
-        return view ('order/index');
-
-    }
-
-
-    /**
+        /**
      * - Get order id from body and return the charging api needs
      */
 
-    public function payhereCharging() {
+     public function payhereCharging() {
 
         $order_id = $this->request->getVar('order_id');
 
@@ -142,9 +135,4 @@ class OrderController extends BaseController
 
 
     }
-
-
-
-
-    
 }
