@@ -163,7 +163,7 @@ class OrderController extends BaseController
     public function toChargingAPI(){
 
         $data = $this->request->getVar();
-        $access_t=$this->accessTokenGen();
+        $access_t="2f6183b0-4403-4333-b91f-60979ac6595c";
 
         $auth = 'Bearer ' .$access_t;
         $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
