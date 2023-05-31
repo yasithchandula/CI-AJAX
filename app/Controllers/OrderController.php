@@ -138,12 +138,33 @@ class OrderController extends BaseController
 
     }
 
+    public function accessTokenGen(){
+        $auth_code=getenv('AUTH_CODE');
+        $url="https://sandbox.payhere.lk/merchant/v1/oauth/token";
+
+        $options=[
+            'headers'=>['Authorization: Basic ' .$auth_code,],
+            'body'=>['grant_type'=>'client_credentials'],
+        ];
+
+
+        $curl=Services::curlrequest($options,);
+
+        $response = $curl->request('POST',$url,$options);
+
+        return $response;
+
+
+    }
+
 
     public function toChargingAPI(){
 
         $data = $this->request->getVar();
-        $auth = 'Bearer ' .getenv('ACCESS_TOKEN');
-        $url = 'https://eokwyobr35ggdi5.m.pipedream.net';
+        $access_t=$this->accessTokenGen();
+
+        $auth = 'Bearer ' .$access_t;
+        $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
 
         $options = [
             'headers'=>['Authorization: '.$auth,
