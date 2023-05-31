@@ -149,7 +149,7 @@ class OrderController extends BaseController
             'body'=>json_encode(['grant_type'=>'client_credentials'])
         ];
 
-        $headers=['Authorization'=>'Basic ' .$auth_code,
+        $headers=['Authorization:'=>'Basic ' .$auth_code,
         'Content-Type'=>'application/x-www-form-urlencoded'];
 
         // log_message('alert',json_encode($options));
