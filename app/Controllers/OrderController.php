@@ -154,7 +154,7 @@ class OrderController extends BaseController
 
         $response = ($curl->request('POST',$url,$options));
         
-        return $response['access_token'];
+        return $response;
 
 
     }
@@ -162,25 +162,25 @@ class OrderController extends BaseController
 
     public function toChargingAPI(){
 
-        $data = $this->request->getVar();
-        $access_t="75e0ac0b-1067-4fb4-ae57-2cc0ada30ccc";
+        // $data = $this->request->getVar();
+        // $access_t="75e0ac0b-1067-4fb4-ae57-2cc0ada30ccc";
 
-        $auth = 'Bearer ' .$access_t;
-        $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
-        print_r($url);
+        // $auth = 'Bearer ' .$access_t;
+        // $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
+        // print_r($url);
 
-        $options = [
-            'headers'=>['Authorization'=>$auth,
-                        'Content-Type'=> 'application/json'], // Set the request headers
-            'body'=>json_encode($data),
-        ];
+        // $options = [
+        //     'headers'=>['Authorization'=>$auth,
+        //                 'Content-Type'=> 'application/json'], // Set the request headers
+        //     'body'=>json_encode($data),
+        // ];
         
-        // Send the request
-        $curl=Services::curlrequest();
+        // // Send the request
+        // $curl=Services::curlrequest();
 
-        $res = $curl->request('POST',$url,$options);
+        // $res = ($curl->request('POST',$url,$options));
 
-        return $res;
+        return $this->accessTokenGen();
         
 
 
