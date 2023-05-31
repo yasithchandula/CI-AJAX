@@ -1,0 +1,20 @@
+INFO - 2023-05-31 12:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 12:32:57 --> 179
+ALERT - 2023-05-31 12:32:58 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:32:58 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:32:58 --> 179
+ALERT - 2023-05-31 12:32:58 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+CRITICAL - 2023-05-31 12:33:02 --> Cannot use object of type CodeIgniter\HTTP\Response as array
+in APPPATH\Controllers\OrderController.php on line 157.
+ 1 APPPATH\Controllers\OrderController.php(166): App\Controllers\OrderController->accessTokenGen()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->toChargingAPI()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-31 12:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 12:33:55 --> 185
+ALERT - 2023-05-31 12:33:57 --> {"order_id":"185","order_title":"DIPSN","amount":"2500","customer_token":"ED412E5AF2EC8318DE9015C74AF919B3","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:33:57 --> {"order_id":"185","order_title":"DIPSN","amount":"2500","customer_token":"ED412E5AF2EC8318DE9015C74AF919B3","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:33:57 --> 185
+ALERT - 2023-05-31 12:33:57 --> {"order_id":"185","order_title":"DIPSN","amount":"2500","customer_token":"ED412E5AF2EC8318DE9015C74AF919B3","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
