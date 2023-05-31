@@ -24,7 +24,9 @@
                             Order Management
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="<?=base_url("order/")?>">Preapproved Orders</a></li>
+                            <li>
+                                <a class="dropdown-item" href="<?=base_url('order')?>">Preapproved Orders</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
