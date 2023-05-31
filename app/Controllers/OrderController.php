@@ -140,7 +140,7 @@ class OrderController extends BaseController
 
     public function accessTokenGen(){
         $auth_code=getenv('AUTH_CODE');
-        $url='https://eokwyobr35ggdi5.m.pipedream.net';
+        $url='https://sandbox.payhere.lk/merchant/v1/oauth/token';
 
         $options=[
             'headers'=>['Authorization'=>'Basic ' .$auth_code,
@@ -179,9 +179,10 @@ class OrderController extends BaseController
         // Send the request
         $curl=Services::curlrequest();
 
-        $response = $curl->request('POST',$url,$options);
+        $res = json_encode($curl->request('POST',$url,$options));
+        $resp=json_decode($res);
 
-        return $this->response->setJSON($response);
+        return $resp['access_token'];
         
 
 
