@@ -178,10 +178,9 @@ class OrderController extends BaseController
         // Send the request
         $curl=Services::curlrequest();
 
-        $res = json_encode($curl->request('POST',$url,$options));
-        $resp=json_decode($res);
+        $res = $curl->request('POST',$url,$options);
 
-        return $resp;
+        return $res;
         
 
 
