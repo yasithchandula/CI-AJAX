@@ -37,7 +37,7 @@
     </div>
 
 
-<!--course Edit Modal-->
+<!--Carging api-->
                 <div class="modal fade prePayment" id="prePayment" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -157,7 +157,7 @@
         function preapprovedOrders(){
             $.ajax({
                 method:"GET",
-                url:"order/preorders",
+                url:"preorders",
                 success:function(response){
                     console.log(response.order);
                     $.each(response.order,function(key,value){
