@@ -153,9 +153,8 @@ class OrderController extends BaseController
         $curl=Services::curlrequest();
 
 
-        $response = ($curl->request('POST',$url,$options));
+        return ($curl->request('POST',$url,$options));
         
-        return $response;
 
 
     }
