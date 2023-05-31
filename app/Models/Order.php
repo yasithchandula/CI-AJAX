@@ -112,9 +112,9 @@ class Order extends Model
 
         $toPayhere=[
             'merchant_id'=>$merchant_id,
-            'return_url'=>'http://localhost:8080/client/index',
-            'cancel_url'=>'http://localhost:8080/client/order_cancel',
-            'notify_url'=>'https://d52e-119-235-8-202.ngrok-free.app/client/verifyOrder',
+            'return_url'=>'https://ci4ajax.herokuapp.com/client/index',
+            'cancel_url'=>'https://ci4ajax.herokuapp.com/client/order_cancel',
+            'notify_url'=>'https://ci4ajax.herokuapp.com/client/verifyOrder',
             'first_name'=>$data['firstName'],
             'last_name'=>$data['lastName'],
             'email'=>$data['email'],
