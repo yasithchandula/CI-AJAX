@@ -79,10 +79,10 @@ $routes->get('usercheck','LoginController::checkSession');
   * Order routes
   */
 
-  $routes->get('order/preorders','OrderController::fetchPreOrders');
-  $routes->get('order/',"OrderController::index",['filter'=>'auth']);
-  $routes->get('order/usercheck','LoginController::checkSession');
-  $routes->post('payhere_charging','OrderController::payhereCharging');
+  $routes->get('order/preorders','OrderController::fetchPreOrders',['filter'=>'auth']);
+  $routes->get('order','OrderController::index',['filter'=>'auth']);
+  $routes->get('order/usercheck','LoginController::checkSession',['filter'=>'auth']);
+  $routes->post('payhere_charging','OrderController::payhereCharging',['filter'=>'auth']);
 
 
 
