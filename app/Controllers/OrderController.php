@@ -9,7 +9,7 @@ class OrderController extends BaseController
 {
     public function index()
     {
-        return view('order/index.php');
+        return view('orders/index.php');
     }
 
      /**
