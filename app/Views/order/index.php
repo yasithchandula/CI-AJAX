@@ -106,6 +106,7 @@
          */
 
         $(document).on('click','.toPrePaybtn',function(){
+            var auth= 'Bearer '+$('#pr_Authorization').val();
 
                     var data ={
                         "type": "PAYMENT",
@@ -119,29 +120,22 @@
                         "notify_url": $('#pr_notify_url').val(),
                         "itemList":[$('#pr_order_title').val()],
                     }
-
-                    var auth= 'Bearer '+$('#pr_Authorization').val();
-
                     console.log(auth);
                     console.log(data);
                 
-
                     $.ajax({
                         method:"POST",
-                        url:"https://sandbox.payhere.lk/merchant/v1/payment/charge",
-                        headers:{
-                            'Authorization':auth,
-                            'Content-Type': 'application/json'
-                        },
+                        url:"tochargingapi",
                         data:data,
                         success:function(response){
                             $('#courseModal').modal('hide');
                             $('#courseModal').find('input').val('');
-                                    if(response.status){
-                                        console.log(response);
-                                    }
-                                    else{
-                                        alertify.error(response.error);
+                            console.log(response);
+                                    // if(response.status){
+                                    //     console.log(response);
+                                    // }
+                                    // else{
+                                    //     alertify.error(response.error);
                                     }
                         }
                     })

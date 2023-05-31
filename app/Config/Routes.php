@@ -83,6 +83,7 @@ $routes->get('usercheck','LoginController::checkSession');
   $routes->get('order','OrderController::index',['filter'=>'auth']);
   $routes->get('orders/usercheck','LoginController::checkSession',['filter'=>'auth']);
   $routes->post('payhere_charging','OrderController::payhereCharging',['filter'=>'auth']);
+  $routes->post('tochargingapi','OrderController::toChargingAPI');
 
 
 

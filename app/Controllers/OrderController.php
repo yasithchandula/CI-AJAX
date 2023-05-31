@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Order;
+use Config\Services;
 
 class OrderController extends BaseController
 {
@@ -135,4 +136,34 @@ class OrderController extends BaseController
 
 
     }
+
+
+    public function toChargingAPI(){
+
+        $data = $this->request->getVar();
+        $auth = 'Bearer'+getenv('ACCESS_TOKEN');
+
+        $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
+
+        $options = [
+            CURLOPT_RETURNTRANSFER => true, // Return the response instead of outputting it
+            CURLOPT_HTTPHEADER => ['Authorization:'+$auth+'',
+                                    'Content-Type: application/json'], // Set the request headers
+            CURLOPT_POSTFIELDS => json_encode($data), // Set the request payload
+        ];
+        
+        // Send the request
+        $curl=Services::curlrequest();
+
+        $response = $curl->request('POST',$url,$options);
+
+        return $this->response->setJSON($response);
+
+
+        
+    }
+
+
+    
 }
+
