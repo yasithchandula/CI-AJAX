@@ -82,7 +82,7 @@ $routes->get('usercheck','LoginController::checkSession');
   $routes->get('order/preorders','OrderController::fetchPreOrders');
   $routes->get('order/',"OrderController::index");
   $routes->get('order/usercheck','LoginController::checkSession');
-  $routes->post('order/payhere_charging','OrderController::payhereCharging');
+  $routes->post('payhere_charging','OrderController::payhereCharging');
 
 
 
