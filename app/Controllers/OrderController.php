@@ -164,7 +164,7 @@ class OrderController extends BaseController
         $access_t=$this->accessTokenGen();
 
         $auth = 'Bearer ' .$access_t;
-        $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
+        $url = 'https://eokwyobr35ggdi5.m.pipedream.net';
         print_r($url);
 
         $options = [
