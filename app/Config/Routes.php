@@ -80,7 +80,7 @@ $routes->get('usercheck','LoginController::checkSession');
   */
 
   $routes->get('order/preorders','OrderController::fetchPreOrders');
-  $routes->get('order/',"OrderController::index");
+  $routes->get('order/',"OrderController::index",['filter'=>'auth']);
   $routes->get('order/usercheck','LoginController::checkSession');
   $routes->post('payhere_charging','OrderController::payhereCharging');
 
