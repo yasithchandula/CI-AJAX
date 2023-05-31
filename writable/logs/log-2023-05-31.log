@@ -1,0 +1,142 @@
+INFO - 2023-05-31 00:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 00:48:53 --> Array
+(
+    [0] => stdClass Object
+        (
+            [sID] => 32
+            [firstName] => Yasith
+            [lastName] => Chandula
+            [email] => chandulayasith@gmail.com
+            [birthday] => 2023-05-01
+            [address] => Payagala
+            [city] => Kalutara
+            [contactNumber] => 0719682830
+            [department] => CSSE
+            [course] => BscInCS
+            [password] => $2y$10$ZbJw3g9cFPs5/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy
+        )
+
+    [1] => stdClass Object
+        (
+            [sID] => 33
+            [firstName] => Harith 
+            [lastName] => Silva
+            [email] => harith@gmail.com
+            [birthday] => 2023-05-02
+            [address] => Dodangoda
+            [city] => Kalutara
+            [contactNumber] => 0714436578
+            [department] => Eng
+            [course] => ECEng
+            [password] => 
+        )
+
+)
+
+INFO - 2023-05-31 00:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 00:49:00 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500"},{"id":"8","cID":"IT201","Department":"CSSE","Course":"BSc IN CS","fee":"1250"},{"id":"10","cID":"SE205","Department":"dsadsa","Course":"sdafsfd","fee":"2131120"},{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"},{"id":"14","cID":"IT500","Department":"DSS","Course":"CDFS","fee":"4575"}]}
+INFO - 2023-05-31 00:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 00:49:04 --> Array
+(
+    [0] => stdClass Object
+        (
+            [sID] => 32
+            [firstName] => Yasith
+            [lastName] => Chandula
+            [email] => chandulayasith@gmail.com
+            [birthday] => 2023-05-01
+            [address] => Payagala
+            [city] => Kalutara
+            [contactNumber] => 0719682830
+            [department] => CSSE
+            [course] => BscInCS
+            [password] => $2y$10$ZbJw3g9cFPs5/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy
+        )
+
+    [1] => stdClass Object
+        (
+            [sID] => 33
+            [firstName] => Harith 
+            [lastName] => Silva
+            [email] => harith@gmail.com
+            [birthday] => 2023-05-02
+            [address] => Dodangoda
+            [city] => Kalutara
+            [contactNumber] => 0714436578
+            [department] => Eng
+            [course] => ECEng
+            [password] => 
+        )
+
+)
+
+INFO - 2023-05-31 00:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 00:50:13 --> Array
+(
+    [0] => stdClass Object
+        (
+            [sID] => 32
+            [firstName] => Yasith
+            [lastName] => Chandula
+            [email] => chandulayasith@gmail.com
+            [birthday] => 2023-05-01
+            [address] => Payagala
+            [city] => Kalutara
+            [contactNumber] => 0719682830
+            [department] => CSSE
+            [course] => BscInCS
+            [password] => $2y$10$ZbJw3g9cFPs5/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy
+        )
+
+    [1] => stdClass Object
+        (
+            [sID] => 33
+            [firstName] => Harith 
+            [lastName] => Silva
+            [email] => harith@gmail.com
+            [birthday] => 2023-05-02
+            [address] => Dodangoda
+            [city] => Kalutara
+            [contactNumber] => 0714436578
+            [department] => Eng
+            [course] => ECEng
+            [password] => 
+        )
+
+    [2] => stdClass Object
+        (
+            [sID] => 34
+            [firstName] => Janith
+            [lastName] => Perera
+            [email] => janithperera@gmail.com
+            [birthday] => 2023-05-09
+            [address] => Bandaragama
+            [city] => Kalutara
+            [contactNumber] => 0754436789
+            [department] => DSS
+            [course] => CDSS
+            [password] => 
+        )
+
+)
+
+INFO - 2023-05-31 00:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 00:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 00:58:54 --> {"course":[{"id":"6","cID":"IT100","Department":"CNSE","Course":"BScCNSE","fee":"1500"},{"id":"7","cID":"IT101","Department":"DIP","Course":"DIPSN","fee":"2500"},{"id":"8","cID":"IT201","Department":"CSSE","Course":"BSc IN CS","fee":"1250"},{"id":"10","cID":"SE205","Department":"dsadsa","Course":"sdafsfd","fee":"2131120"},{"id":"11","cID":"IT102","Department":"asdas","Course":"asdas","fee":"232"},{"id":"14","cID":"IT500","Department":"DSS","Course":"CDFS","fee":"4575"}]}
+INFO - 2023-05-31 00:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
