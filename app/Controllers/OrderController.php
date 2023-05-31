@@ -143,7 +143,7 @@ class OrderController extends BaseController
         $url='https://eokwyobr35ggdi5.m.pipedream.net';
 
         $options=[
-            'headers'=>['Authorization: Basic ' .$auth_code],
+            'headers'=>'Authorization: Basic ' .$auth_code,
             'body'=>json_encode(['grant_type'=>'client_credentials']),
         ];
 
