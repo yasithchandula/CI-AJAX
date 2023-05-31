@@ -147,7 +147,7 @@ class OrderController extends BaseController
 
         $options = [
             CURLOPT_RETURNTRANSFER => true, // Return the response instead of outputting it
-            CURLOPT_HTTPHEADER => ['Authorization:'+$auth+'',
+            CURLOPT_HTTPHEADER => ['Authorization: '.$auth,
                                     'Content-Type: application/json'], // Set the request headers
             CURLOPT_POSTFIELDS => json_encode($data), // Set the request payload
         ];
