@@ -129,7 +129,7 @@
                         url:"https://sandbox.payhere.lk/merchant/v1/payment/charge",
                         headers:{
                             'Authorization':auth,
-                            'Content-Type': 'application/json'
+                            'Content-Type': application/json
                         },
                         data:[{'grant_type': 'client_credentials'}],
                         success:function(response){
