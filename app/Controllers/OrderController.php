@@ -170,8 +170,8 @@ class OrderController extends BaseController
         print_r($url);
 
         $options = [
-            'headers'=>['Authorization: '.$auth,
-                        'Content-Type: application/json'], // Set the request headers
+            'headers'=>['Authorization'=>$auth,
+                        'Content-Type'=> 'application/json'], // Set the request headers
             'body'=>json_encode($data),
         ];
         
