@@ -1,0 +1,43 @@
+INFO - 2023-05-31 11:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 11:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 11:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 11:55:24 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-05-31 11:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 11:55:26 --> 186
+ALERT - 2023-05-31 11:55:27 --> {"order_id":"186","order_title":"BScCNSE","amount":"1500","customer_token":"14D61128AB70399B5C7B4D2B4B0F93B9","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 11:55:27 --> {"order_id":"186","order_title":"BScCNSE","amount":"1500","customer_token":"14D61128AB70399B5C7B4D2B4B0F93B9","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 11:55:27 --> 186
+ALERT - 2023-05-31 11:55:27 --> {"order_id":"186","order_title":"BScCNSE","amount":"1500","customer_token":"14D61128AB70399B5C7B4D2B4B0F93B9","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+CRITICAL - 2023-05-31 11:55:32 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Controllers\OrderController.php on line 167.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->toChargingAPI()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-05-31 11:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 11:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 11:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 11:56:47 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-05-31 11:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 11:56:48 --> 179
+ALERT - 2023-05-31 11:56:49 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 11:56:49 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 11:56:49 --> 179
+ALERT - 2023-05-31 11:56:49 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+INFO - 2023-05-31 12:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 12:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 12:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 12:05:48 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-05-31 12:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 12:05:50 --> 205
+ALERT - 2023-05-31 12:05:51 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:05:51 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:05:51 --> 205
+ALERT - 2023-05-31 12:05:51 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+INFO - 2023-05-31 12:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-05-31 12:08:17 --> 179
+ALERT - 2023-05-31 12:08:18 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:08:18 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
+ALERT - 2023-05-31 12:08:18 --> 179
+ALERT - 2023-05-31 12:08:19 --> {"order_id":"179","order_title":"BScCNSE","amount":null,"customer_token":"F30380F3A58EB8846478F2C976E515C6","Authorization":"875f3e9a-1475-45f3-82ea-56bb64dae94e"}
