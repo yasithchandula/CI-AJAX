@@ -116,22 +116,24 @@
                         "customer_token": $('#pr_customer_token').val(),
                         "custom_1": null,
                         "custom_2": null,
-                        "notify_url": "",
+                        "notify_url": $('#pr_notify_url').val(),
                         "itemList":[$('#pr_order_title').val()],
                     }
 
                     var auth= 'Bearer '+$('#pr_Authorization').val();
+
                     console.log(auth);
                     console.log(data);
+                
 
                     $.ajax({
                         method:"POST",
                         url:"https://sandbox.payhere.lk/merchant/v1/payment/charge",
                         headers:{
                             'Authorization':auth,
-                            'Content-Type': application/json
+                            'Content-Type': 'application/json'
                         },
-                        data:[{'grant_type': 'client_credentials'}],
+                        data:data,
                         success:function(response){
                             $('#courseModal').modal('hide');
                             $('#courseModal').find('input').val('');
