@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\Order;
 use CodeIgniter\HTTP\CURLRequest;
+use CodeIgniter\HTTP\ResponseInterface;
 use Config\Services;
 
 class OrderController extends BaseController
@@ -148,13 +149,15 @@ class OrderController extends BaseController
             'body'=>json_encode(['grant_type'=>'client_credentials'])
         ];
 
-        $headers=['Authorization:'=>'Basic ' .$auth_code,
-        'Content-Type'=>'application/x-www-form-urlencoded'];
 
         // log_message('alert',json_encode($options));
         $curl=Services::curlrequest();
 
-        return $this->response->setJSON($curl->request('POST',$url,$options,));
+        // $x=$this->response->setJSON($curl->request('POST',$url,$options));
+        $x=$this->response->setJSON($curl->post($url,$options));
+        $x=log_message('alert',json_encode($x));
+
+        return $x;
 
 
         // return ($curl->request('POST',$url,$options));
