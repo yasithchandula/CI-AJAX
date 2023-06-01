@@ -16,15 +16,18 @@
             <caption>List of Orders</caption>
             <thead>
                 <tr>
+                    <th scope="col">Subcription ID</th>
                     <th scope="col">Order ID</th>
-                    <th scope="col">Student ID</th>
-                    <th scope="col">Order Title</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Recurring</th>
+                    <th scope='col'>Status</th>
                     <th scope="col">Amount</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
                     
                 </tr>
             </thead>
-            <tbody class="orderdata">
+            <tbody class="subcriptionData">
             </tbody>
             </table>
                         
@@ -217,7 +220,9 @@
                 method:"GET",
                 url:"getallsub",
                 success:function(response){
-                    console.log(response);
+                    $each(response.data,function(key,val){
+                        console.log(key,val);
+                    })
                     // $.each(response.order,function(key,value){
                     //     console.log(key,value);
                     //     $('.orderdata').append('<tr>\
