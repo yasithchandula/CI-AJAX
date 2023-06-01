@@ -149,10 +149,11 @@ class OrderController extends BaseController
         $curl->setHeader('Authorization',$auth_code);
         $curl->setBody($body);
 
-        $response = ($curl->request('POST',$url));
-        
-        log_message('alert',json_encode($response));
-        return $this->$response->getVar('access_token');
+        $response = ($curl->request('POST',$url)->getBody());
+        $res=json_decode($response);
+
+
+        return $res['access_token'];
 
     }
 
