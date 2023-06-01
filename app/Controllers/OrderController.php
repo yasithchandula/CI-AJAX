@@ -201,9 +201,15 @@ class OrderController extends BaseController
         curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($data));
         curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
 
-        $response=curl_exec($ch);
-
-        return $response;
+        $head = curl_exec($ch);
+        curl_close($ch);
+    
+        if (!$head) {
+            return FALSE;
+        } else {
+            return $head;
+        }
+        return FALSE;
 
 
         
