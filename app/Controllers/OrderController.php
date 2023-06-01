@@ -140,24 +140,40 @@ class OrderController extends BaseController
     }
 
     public function accessTokenGen(){
-        $auth_code=getenv('AUTH_CODE');
-        $url='https://sandbox.payhere.lk/merchant/v1/oauth/token';
+        $auth_code='Basic '.getenv('AUTH_CODE');
+        $url='https://eokwyobr35ggdi5.m.pipedream.net';
 
-        $options=[
-            'headers'=>['Content-Type'=>'application/x-www-form-urlencoded'],
+        $body = http_build_query(array('grant_type'=>'client_credentials'));
+        $header=array('Authorization'=>$auth_code);
 
-            'body'=>json_encode(['grant_type'=>'client_credentials'])
-        ];
+        $curl=Services::curlrequest();
+        $curl->setHeader('Authorization',$auth_code);
+        $curl->setBody($body);
+
+        $response = $this->response->setJSON($curl->request('POST',$url));
+        
+        log_message('alert',json_encode($response));
+        return $response;
+
+
+
+        
+
+        // $options=[
+        //     'headers'=>['Authorization: Basic '=>$auth_code],
+
+        //     'body'=>['grant_type'=>'client_credentials']
+        // ];
 
 
         // log_message('alert',json_encode($options));
-        $curl=Services::curlrequest();
+        // $curl=Services::curlrequest();
 
         // $x=$this->response->setJSON($curl->request('POST',$url,$options));
-        $x=$this->response->setJSON($curl->post($url,$options));
-        $x=log_message('alert',json_encode($x));
+        // $x=$this->response->setJSON($curl->post($url,$options));
+        // log_message('alert',json_encode($x));
 
-        return $x;
+        // return $x;
 
 
         // return ($curl->request('POST',$url,$options));
