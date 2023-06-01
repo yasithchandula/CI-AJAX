@@ -139,70 +139,70 @@
          * - Listning to click on edit button
          * - Load the Course edit modal and pass the parameters to input fields on the modal
          */
-        $(document).on('click','.get-payment',function(){
-            var order_id = $(this).closest('tr').find('.order_id').text();
-            console.log(order_id);
-            $.ajax({
-                method:"POST",
-                url:"payhere_charging",
-                data : {
-                    "order_id":order_id
-                },
-                success:function(response){
+        // $(document).on('click','.get-payment',function(){
+        //     var order_id = $(this).closest('tr').find('.order_id').text();
+        //     console.log(order_id);
+        //     $.ajax({
+        //         method:"POST",
+        //         url:"payhere_charging",
+        //         data : {
+        //             "order_id":order_id
+        //         },
+        //         success:function(response){
 
-                    $.each(response,function(key,value){
-                        console.log(key,value);
-                        $('.hidden_pre_pay').append('\
-                        <input type="hidden" name="'+key+'" id="pr_'+key+'" value='+value+'>');
-                        $('.prePayment').modal('show')
-                    })
+        //             $.each(response,function(key,value){
+        //                 console.log(key,value);
+        //                 $('.hidden_pre_pay').append('\
+        //                 <input type="hidden" name="'+key+'" id="pr_'+key+'" value='+value+'>');
+        //                 $('.prePayment').modal('show')
+        //             })
 
-                    }
-            })
+        //             }
+        //     })
 
-        })
+        // })
 
         /**
          * - Preapproval Authorization
          */
 
-        $(document).on('click','.toPrePaybtn',function(){
+        // $(document).on('click','.toPrePaybtn',function(){
 
-                    var data ={
-                        "type": "PAYMENT",
-                        "order_id": $('#pr_order_id').val(),
-                        "items": 'Course Fee',
-                        "currency": "LKR",
-                        "amount": $('#pr_amount').val(),
-                        "customer_token": $('#pr_customer_token').val(),
-                        "custom_1": 'ddd',
-                        "custom_2": 'sss',
-                        "notify_url":"https://ci4ajax.herokuapp.com/client/verifyOrder",
-                        "itemList":[''],
-                                            }
-                    // console.log(data);
+        //             var data ={
+        //                 "type": "PAYMENT",
+        //                 "order_id": $('#pr_order_id').val(),
+        //                 "items": 'Course Fee',
+        //                 "currency": "LKR",
+        //                 "amount": $('#pr_amount').val(),
+        //                 "customer_token": $('#pr_customer_token').val(),
+        //                 "custom_1": 'ddd',
+        //                 "custom_2": 'sss',
+        //                 "notify_url":"https://ci4ajax.herokuapp.com/client/verifyOrder",
+        //                 "itemList":[''],
+        //                                     }
+        //             // console.log(data);
                 
-                    $.ajax({
-                        method:"POST",
-                        url:"tochargingapi",
-                        data:data,
-                        success:function(response){
+        //             $.ajax({
+        //                 method:"POST",
+        //                 url:"tochargingapi",
+        //                 data:data,
+        //                 success:function(response){
 
-                            $('#cg_para').append(
-                                '<p>'+response.status+'</p>'
-                            );
+        //                     $('#cg_para').append(
+        //                         '<p>'+response.status+'</p>'
+        //                     );
 
-                            $('#prePayment').modal('hide');
-                            $('#chargingcompleted').modal('show');
+        //                     $('#prePayment').modal('hide');
+        //                     $('#chargingcompleted').modal('show');
 
-                            console.log(response);
+        //                     console.log(response);
 
 
-                        }
-                    })
+        //                 }
+        //             })
             
 
-        })
+        // })
 
 
 
@@ -218,54 +218,54 @@
                 url:"getallsub",
                 success:function(response){
                     console.log(response);
-                    $.each(response.order,function(key,value){
-                        console.log(key,value);
-                        // $('.orderdata').append('<tr>\
-                        // <td class="order_id">'+value['order_id']+'</td>\
-                        // <td>'+value['sID']+'</td>\
-                        // <td>'+value['order_title']+'</td>\
-                        // <td>'+value['amount']+'</td>\
-                        // <td>'+value['status_message']+'</td>\
-                        // <td> <a href="#" class="badge btn btn-primary get-payment">Get Payment</a>\
-                        // </td>\
-                        // </tr>');
+                    // $.each(response.order,function(key,value){
+                    //     console.log(key,value);
+                    //     $('.orderdata').append('<tr>\
+                    //     <td class="order_id">'+value['order_id']+'</td>\
+                    //     <td>'+value['sID']+'</td>\
+                    //     <td>'+value['order_title']+'</td>\
+                    //     <td>'+value['amount']+'</td>\
+                    //     <td>'+value['status_message']+'</td>\
+                    //     <td> <a href="#" class="badge btn btn-primary get-payment">Get Payment</a>\
+                    //     </td>\
+                    //     </tr>');
                         
-                    })
+                    // })
                 }
             })
         }
 
 
-        $(document).on('click','#nav_findorder',function(){
-            $('.findOrder').modal('show');
-        })
+        // $(document).on('click','#nav_findorder',function(){
+        //     $('.findOrder').modal('show');
+        // })
 
 
 
-        $(document).on('click','.f_orderbtn',function(){
+        // $(document).on('click','.f_orderbtn',function(){
 
-            var data={'order_id':$('#f_orderid').val()};
+        //     var data={'order_id':$('#f_orderid').val()};
             
-            console.log(data);
+        //     console.log(data);
 
-            $.ajax({
-                method:"POST",
-                url:"orders/findorder",
-                data:data,
-                success:function(response){
-                    console.log(response);
-                    $('.findOrder').modal('hide');
+        //     $.ajax({
+        //         method:"POST",
+        //         url:"orders/findorder",
+        //         data:data,
+        //         success:function(response){
+        //             console.log(response);
+        //             $('.findOrder').modal('hide');
 
-                    $('#py_details').append('<p>'+response+'</p>');
-
-
-                    $('.paymentDetails').modal('show');
-
-                }
-            })
+        //             $('#py_details').append('<p>'+response+'</p>');
 
 
-        })
+        //             $('.paymentDetails').modal('show');
+
+        //         }
+        //     })
+
+
+        // })
 
 
 
