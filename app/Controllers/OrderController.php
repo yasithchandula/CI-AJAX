@@ -176,7 +176,7 @@ class OrderController extends BaseController
         log_message('alert',json_encode($data));
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
-        $body=$data;
+        $body=json_encode($data);
 
         $curl=Services::curlrequest();
         $curl->setHeader('Authorization',$auth);
