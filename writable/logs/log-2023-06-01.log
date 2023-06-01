@@ -1,0 +1,59 @@
+INFO - 2023-06-01 11:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 11:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 11:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 11:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 11:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 11:17:32 --> Array
+(
+    [0] => stdClass Object
+        (
+            [sID] => 32
+            [firstName] => Yasith
+            [lastName] => Chandula
+            [email] => chandulayasith@gmail.com
+            [birthday] => 2023-05-01
+            [address] => Payagala
+            [city] => Kalutara
+            [contactNumber] => 0719682830
+            [department] => CSSE
+            [course] => BscInCS
+            [password] => $2y$10$ZbJw3g9cFPs5/2jjh44zgubYsgBZiTcMRMGiJ41V1vcQGD7f.dFVy
+        )
+
+    [1] => stdClass Object
+        (
+            [sID] => 33
+            [firstName] => Harith 
+            [lastName] => Silva
+            [email] => harith@gmail.com
+            [birthday] => 2023-05-02
+            [address] => Dodangoda
+            [city] => Kalutara
+            [contactNumber] => 0714436578
+            [department] => Eng
+            [course] => ECEng
+            [password] => 
+        )
+
+    [2] => stdClass Object
+        (
+            [sID] => 34
+            [firstName] => Janith
+            [lastName] => Perera
+            [email] => janithperera@gmail.com
+            [birthday] => 2023-05-09
+            [address] => Bandaragama
+            [city] => Kalutara
+            [contactNumber] => 0754436789
+            [department] => DSS
+            [course] => CDSS
+            [password] => 
+        )
+
+)
+
+INFO - 2023-06-01 11:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 11:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 11:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 11:17:38 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"},{"order_id":"206","sID":"19","order_title":"DIPSN","status_message":"Successfully received the MASTER payment","amount":"2500"}]}
+ALERT - 2023-06-01 11:17:41 --> 206
