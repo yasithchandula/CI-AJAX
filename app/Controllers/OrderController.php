@@ -7,6 +7,7 @@ use App\Models\Order;
 use CodeIgniter\HTTP\CURLRequest;
 use CodeIgniter\HTTP\ResponseInterface;
 use Config\Services;
+use stdClass;
 
 class OrderController extends BaseController
 {
@@ -149,10 +150,11 @@ class OrderController extends BaseController
         $curl->setHeader('Authorization',$auth_code);
         $curl->setBody($body);
 
-        $response = ($curl->request('POST',$url)->getBody());
+        $response= new stdClass();
 
+        $response = (array)($curl->request('POST',$url)->getBody());
 
-        return $response;
+        return $response['access_token'];
 
     }
 
@@ -160,7 +162,11 @@ class OrderController extends BaseController
     public function toChargingAPI(){
 
         // $data = $this->request->getVar();
-        // $access_t=;
+        // $res_p=(array)$this->accessTokenGen();
+        // $access_t=$res_p['access_token'];
+
+
+
 
         // $auth = 'Bearer ' .$access_t;
         // $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
