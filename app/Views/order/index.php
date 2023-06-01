@@ -56,6 +56,29 @@
                     </div>
                 </div>
 
+<!--Carging completed-->
+<div class="modal fade chargingcompleted" id="chargingcompleted" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Payment Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="cg_para"></p>
+                            <div class="hidden_pre_pay">
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger toPrePaybtn" > Confirm Payment </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
 
 <?=$this->endSection()?>
 
@@ -87,7 +110,7 @@
                     "order_id":order_id
                 },
                 success:function(response){
-                    // console.log(response);
+
                     $.each(response,function(key,value){
                         console.log(key,value);
                         $('.hidden_pre_pay').append('\
@@ -125,15 +148,19 @@
                         url:"tochargingapi",
                         data:data,
                         success:function(response){
-                            $('#courseModal').modal('hide');
-                            $('#courseModal').find('input').val('');
+                            $('#cg_para').val()=response.msg;
+
+
+
+
+
+
+
+                            $('#prePayment').modal('hide');
+                            $('#chargingcompleted').modal('show');
+
                             console.log(response);
-                                    // if(response.status){
-                                    //     console.log(response);
-                                    // }
-                                    // else{
-                                    //     alertify.error(response.error);
-                                    // }
+
                         }
                     })
             
