@@ -298,7 +298,7 @@ class OrderController extends BaseController
         if (!$head) {
             return FALSE;
         } else {
-            return $head;
+            return json_encode($head);
         }
         return FALSE;
 
