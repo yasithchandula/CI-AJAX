@@ -154,7 +154,7 @@ class OrderController extends BaseController
 
         $response = (array)($curl->request('POST',$url)->getBody());
 
-        return $response['access_token'];
+        return $response;
 
     }
 
