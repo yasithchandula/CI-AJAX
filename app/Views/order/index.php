@@ -101,12 +101,10 @@
         })
 
         /**
-         * - update the course details
-         * - Sends the values stored in input fields of the model
+         * - Preapproval Authorization
          */
 
         $(document).on('click','.toPrePaybtn',function(){
-            // var auth= 'Bearer '+$('#pr_Authorization').val();
 
                     var data ={
                         "type": "PAYMENT",
@@ -118,18 +116,7 @@
                         "custom_1": 'ddd',
                         "custom_2": 'sss',
                         "notify_url":"https://ci4ajax.herokuapp.com/client/verifyOrder",
-                        "itemList":[        {
-                                    "name": "BSCINSS",
-                                    "number": "205",
-                                    "quantity": 1,
-                                    "unit_amount": 300.00
-                                },
-                                {
-                                    "name": "msc",
-                                    "number": "206",
-                                    "quantity": 1,
-                                    "unit_amount": 5000
-                                }],
+                        "itemList":[''],
                                             }
                     // console.log(data);
                 
