@@ -141,7 +141,7 @@ class OrderController extends BaseController
 
     public function accessTokenGen(){
         $auth_code='Basic '.getenv('AUTH_CODE');
-        $url='https://eokwyobr35ggdi5.m.pipedream.net';
+        $url='https://sandbox.payhere.lk/merchant/v1/oauth/token';
 
         $body = http_build_query(array('grant_type'=>'client_credentials'));
         $header=array('Authorization'=>$auth_code);
