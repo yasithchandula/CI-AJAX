@@ -171,12 +171,13 @@ class OrderController extends BaseController
 
         $data['notify_url']='https://ci4ajax.herokuapp.com/client/verifyOrder';
 
-        $url='https://sandbox.payhere.lk/merchant/v1/payment/charge';
+        $url='https://eokwyobr35ggdi5.m.pipedream.net';
        
         log_message('alert',json_encode($data));
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
-        $body=json_encode($data);
+        $body=http_build_query(['type'=>$data['type'],'order_id'=>$data['order_id'],'items'=>$data['items'],'currency'=>$data['currency'],
+        'customer_token'=>$data['customer_token'],'custom_1'=>$data['custom_1'],'custom_2'=>$data['custom_2'],'notify_url'=>$data['notify_url'],'itemList'=>$data['itemList'],],);
 
         $curl=Services::curlrequest();
         $curl->setHeader('Authorization',$auth);
