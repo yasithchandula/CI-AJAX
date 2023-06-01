@@ -170,6 +170,7 @@ class OrderController extends BaseController
         $data = ($this->request->getVar());
 
         $data['notify_url']='https://ci4ajax.herokuapp.com/client/verifyOrder';
+        $data['amount']=doubleval($data['amount']);
 
         $url='https://sandbox.payhere.lk/merchant/v1/payment/charge';
 
@@ -193,6 +194,8 @@ class OrderController extends BaseController
 
         // $data=json_decode($response,true);
         // return $data;
+
+        log_message('alert',json_encode($data));
 
         $ch=curl_init();
         curl_setopt($ch,CURLOPT_URL,$url);
