@@ -118,7 +118,7 @@
                         "custom_1": 'ddd',
                         "custom_2": 'sss',
                         "notify_url":"https://ci4ajax.herokuapp.com/client/verifyOrder",
-                        "itemList":['item1',$('#pr_order_title').val()],
+                        "itemList":['item1','dds','item2','dfd'],
                     }
                     console.log(data);
                 
