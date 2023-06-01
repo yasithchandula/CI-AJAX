@@ -215,7 +215,7 @@
         function getAllSubcriptions(){
             $.ajax({
                 method:"GET",
-                url:"orders/getallsub",
+                url:"getallsub",
                 success:function(response){
                     console.log(response.order);
                     $.each(response.order,function(key,value){
