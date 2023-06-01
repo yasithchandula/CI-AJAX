@@ -172,22 +172,40 @@ class OrderController extends BaseController
         // $data['notify_url']='https://ci4ajax.herokuapp.com/client/verifyOrder';
 
         $url='https://sandbox.payhere.lk/merchant/v1/payment/charge';
+
+        
        
-        log_message('alert',json_encode($data));
+        // log_message('alert',json_encode($data));
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
-        $body=json_encode($data);
+        //$body=json_encode($data);
+        $headers=array('Authorization' =>$auth,'content-type' =>'application/json');
 
-        $curl=Services::curlrequest();
-        $curl->setHeader('Authorization',$auth);
-        $curl->setHeader('Content-Type', 'application/json');
-        $curl->setBody($body);
+        // $curl=Services::curlrequest();
+        // $curl->setHeader('Authorization',$auth);
+        // $curl->setHeader('Content-Type', 'application/json');
+        // $curl->setBody($body);
+
         
-        $response= new stdClass();
-        $response = ($curl->request('POST',$url))->getBody();
+        // $response= new stdClass();
+        // $response = ($curl->request('POST',$url))->getBody();
 
-        $data=json_decode($response,true);
-        return $data;
+        // $data=json_decode($response,true);
+        // return $data;
+
+        $ch=curl_init();
+        curl_setopt($ch,CURLOPT_URL,$url);
+        curl_setopt($ch,CURLOPT_POST,1);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($data));
+        curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
+
+        $response=curl_exec($ch);
+
+        return $response;
+
+
+        
 
 
         // $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
