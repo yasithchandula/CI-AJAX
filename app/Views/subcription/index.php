@@ -217,7 +217,7 @@
                 method:"GET",
                 url:"getallsub",
                 success:function(response){
-                    console.log(response.order);
+                    console.log(response);
                     $.each(response.order,function(key,value){
                         console.log(key,value);
                         // $('.orderdata').append('<tr>\
