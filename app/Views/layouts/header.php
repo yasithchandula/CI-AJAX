@@ -30,6 +30,9 @@
                             <li>
                                 <a class="dropdown-item" id="nav_findorder">Find Order details</a>
                             </li>
+                            <li>
+                                <a class="dropdown-item" href="<?=base_url('orders/subcription')?>">Subcriptions</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">

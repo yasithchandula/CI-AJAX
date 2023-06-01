@@ -168,10 +168,8 @@ class OrderController extends BaseController
     public function toChargingAPI(){
 
         $data = ($this->request->getVar());
-
         $data['notify_url']='https://ci4ajax.herokuapp.com/client/verifyOrder';
         $data['amount']=doubleval($data['amount']);
-
         $url='https://sandbox.payhere.lk/merchant/v1/payment/charge';
 
         
@@ -270,6 +268,41 @@ class OrderController extends BaseController
         return FALSE;
 
      }
+
+
+     /**
+      * - return to index view of subcriptions
+      */
+
+      public function subcriptionIndex(){
+        return view('subcription/index.php');
+      }
+
+      public function getAllSubcription(){
+        $access_t=$this->accessTokenGen();
+        $auth = 'Bearer ' .$access_t;
+
+        $headers=array('Authorization:'.$auth,
+        'content-type: application/json');
+
+        $url = "https://sandbox.payhere.lk/merchant/v1/subscription";
+
+        $ch=curl_init();
+        curl_setopt($ch,CURLOPT_URL,$url);
+        curl_setopt($ch,CURLOPT_HTTPGET,1);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
+        $head = curl_exec($ch);
+        curl_close($ch);
+
+        if (!$head) {
+            return FALSE;
+        } else {
+            return $head;
+        }
+        return FALSE;
+
+      }
 
 
     

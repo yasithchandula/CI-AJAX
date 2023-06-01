@@ -85,6 +85,10 @@ $routes->get('usercheck','LoginController::checkSession');
   $routes->post('payhere_charging','OrderController::payhereCharging',['filter'=>'auth']);
   $routes->post('tochargingapi','OrderController::toChargingAPI');
   $routes->post('orders/findorder','OrderController::findOrder');
+  $routes->get('orders/subcription','OrderController::subcriptionIndex');
+  $routes->get('orders/getallsub','OrderController::subcriptionIndex');
+
+
 
 
 
