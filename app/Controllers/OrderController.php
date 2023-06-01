@@ -205,7 +205,7 @@ class OrderController extends BaseController
 
         // $res = ($curl->request('POST',$url,$options));
 
-        return $this->response->setJSON($this->accessTokenGen());
+        return $this->accessTokenGen();
         
 
 
