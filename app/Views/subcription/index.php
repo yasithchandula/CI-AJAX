@@ -221,9 +221,6 @@
                 url:"getallsub",
                 success:function(response){
                     console.log(response);
-                    $.each(response.data,function(key,val){
-                        console.log(key,val);
-                    })
                     // $.each(response.order,function(key,value){
                     //     console.log(key,value);
                     //     $('.orderdata').append('<tr>\
