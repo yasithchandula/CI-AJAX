@@ -245,7 +245,7 @@ class OrderController extends BaseController
         $order_id= $this->request->getVar();
         log_message('alert',json_encode($order_id));
         //$url="https://eokwyobr35ggdi5.m.pipedream.net";
-        $url='https://sandbox.payhere.lk/merchant/v1/payment/search?order_id=LP8006126139';
+        $url='https://sandbox.payhere.lk/merchant/v1/payment/search?order_id='+$order_id['order_id'];
 
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
@@ -257,9 +257,7 @@ class OrderController extends BaseController
         curl_setopt($ch,CURLOPT_URL,$url);
         curl_setopt($ch,CURLOPT_HTTPGET,1);
         curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($order_id));
         curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
-
         $head = curl_exec($ch);
         curl_close($ch);
 
