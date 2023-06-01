@@ -139,6 +139,10 @@ class OrderController extends BaseController
 
 
     }
+    /**
+     * - Generate Access Token for the ocharging request
+     * 
+     */
 
     public function accessTokenGen(){
         $auth_code='Basic '.getenv('AUTH_CODE');
@@ -152,25 +156,41 @@ class OrderController extends BaseController
 
         $response= new stdClass();
 
-        $response = (array)($curl->request('POST',$url)->getBody());
+        $response = ($curl->request('POST',$url))->getBody();
+        $data=json_decode($response,true);
 
-        return $response;
+
+        return $data['access_token'];
 
     }
 
 
     public function toChargingAPI(){
 
-        // $data = $this->request->getVar();
-        // $res_p=(array)$this->accessTokenGen();
-        // $access_t=$res_p['access_token'];
+        $data = ($this->request->getVar());
+
+        $data['notify_url']='https://ci4ajax.herokuapp.com/client/verifyOrder';
+
+        $url='https://sandbox.payhere.lk/merchant/v1/payment/charge';
+       
+        log_message('alert',json_encode($data));
+        $access_t=$this->accessTokenGen();
+        $auth = 'Bearer ' .$access_t;
+        $body=http_build_query($data);
+
+        $curl=Services::curlrequest();
+        $curl->setHeader('Authorization',$auth);
+        $curl->setHeader('Content-Type', 'application/json');
+        $curl->setBody($body);
+
+        $response= new stdClass();
+        $response = ($curl->request('POST',$url))->getBody();
+
+        $data=json_decode($response,true);
+        return $data;
 
 
-
-
-        // $auth = 'Bearer ' .$access_t;
         // $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
-        // print_r($url);
 
         // $options = [
         //     'headers'=>['Authorization'=>$auth,
@@ -183,10 +203,8 @@ class OrderController extends BaseController
 
         // $res = ($curl->request('POST',$url,$options));
 
-        return $this->accessTokenGen();
+        // return $this->accessTokenGen();
         
-
-
 
         
     }
