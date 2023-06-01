@@ -154,7 +154,7 @@ class OrderController extends BaseController
         // log_message('alert',json_encode($options));
         $curl=Services::curlrequest();
 
-        return $this->response->setJSON($curl->post($url,$options,['headers'=>$headers]));
+        return $this->response->setJSON($curl->request('POST',$url,$options,));
 
 
         // return ($curl->request('POST',$url,$options));
