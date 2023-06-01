@@ -27,6 +27,9 @@
                             <li>
                                 <a class="dropdown-item" href="<?=base_url('order')?>">Preapproved Orders</a>
                             </li>
+                            <li>
+                                <a class="dropdown-item" id="nav_findorder">Find Order details</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">

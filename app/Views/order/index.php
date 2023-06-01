@@ -68,10 +68,6 @@
                             <div id="cg_para">
 
                             </div>
-    
-                            <div class="hidden_pre_pay">
-
-                            </div>
 
                         </div>
                         <div class="modal-footer">
@@ -80,6 +76,46 @@
                     </div>
                     </div>
                 </div>
+
+<!--findOrder-->
+<div class="modal fade findOrder" id="findOrder" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Find Order</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label>Enter Order ID to get payment details </label>
+                            <input type="text" class="form-control" id="f_orderid" placeholder="Enter Order ID">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger f_orderbtn" > Find Order Details </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!--Payment Details-->
+                <div class="modal fade paymentDetails" id="paymentDetails" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Payment Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="py_details">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
 
 
 
@@ -151,18 +187,16 @@
                         url:"tochargingapi",
                         data:data,
                         success:function(response){
-                            $('#cg_para').text(response.msg);
 
-
-
-
-
-
+                            $('#cg_para').append(
+                                '<p>'+response.status+'</p>'
+                            );
 
                             $('#prePayment').modal('hide');
                             $('#chargingcompleted').modal('show');
 
                             console.log(response);
+
 
                         }
                     })
@@ -172,7 +206,6 @@
 
 
 
-        
 
 
     /**
@@ -201,6 +234,41 @@
                 }
             })
         }
+
+
+        $(document).on('click','#nav_findorder',function(){
+            $('.findOrder').modal('show');
+        })
+
+
+
+        $(document).on('click','.f_orderbtn',function(){
+            var data=$('#f_orderid').val();
+            console.log(data);
+
+            $.ajax({
+                method:"POST",
+                url:"orders/findorder",
+                data:data,
+                success:function(response){
+                    console.log(response);
+                    $('.findOrder').modal('hide');
+
+                    $('#py_details').append('<p>'+response+'</p>');
+
+
+                    $('.paymentDetails').modal('show');
+
+                }
+            })
+
+
+        })
+
+
+
+
+        
 
 
     </script>

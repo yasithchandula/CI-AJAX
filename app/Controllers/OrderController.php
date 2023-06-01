@@ -237,6 +237,40 @@ class OrderController extends BaseController
         
     }
 
+    /**
+     * -find Order details
+     */
+
+     public function findOrder() {
+        $order_id = $this->request->getVar('order_id');
+        $url='https://sandbox.payhere.lk/merchant/v1/payment/search?order_id=LP8006126139';
+
+        $access_t=$this->accessTokenGen();
+        $auth = 'Bearer ' .$access_t;
+
+        $headers=array('Authorization:'.$auth,
+        'content-type: application/json');
+
+        $ch=curl_init();
+        curl_setopt($ch,CURLOPT_URL,$url);
+        curl_setopt($ch,CURLOPT_HTTPGET,1);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($order_id));
+        curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
+
+        $head = curl_exec($ch);
+        curl_close($ch);
+
+    
+        if (!$head) {
+            return FALSE;
+        } else {
+            return $head;
+        }
+        return FALSE;
+
+     }
+
 
     
 }
