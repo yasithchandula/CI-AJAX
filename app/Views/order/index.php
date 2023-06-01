@@ -243,7 +243,9 @@
 
 
         $(document).on('click','.f_orderbtn',function(){
-            var data=$('#f_orderid').val();
+
+            var data={'order_id':$('#f_orderid').val()};
+            
             console.log(data);
 
             $.ajax({
