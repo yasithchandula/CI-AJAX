@@ -65,7 +65,10 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p id="cg_para"></p>
+                            <div id="cg_para">
+
+                            </div>
+    
                             <div class="hidden_pre_pay">
 
                             </div>
@@ -148,7 +151,7 @@
                         url:"tochargingapi",
                         data:data,
                         success:function(response){
-                            $('#cg_para').val()=response.msg;
+                            $('#cg_para').text(response.msg);
 
 
 
