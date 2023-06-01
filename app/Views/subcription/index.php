@@ -220,6 +220,9 @@
                 method:"GET",
                 url:"getallsub",
                 success:function(response){
+                    $.each(response,function(key,value){
+                        console.log(key,value);
+                    })
                     // $.each(response.order,function(key,value){
                     //     console.log(key,value);
                     //     $('.orderdata').append('<tr>\
