@@ -106,7 +106,7 @@
          */
 
         $(document).on('click','.toPrePaybtn',function(){
-            var auth= 'Bearer '+$('#pr_Authorization').val();
+            // var auth= 'Bearer '+$('#pr_Authorization').val();
 
                     var data ={
                         "type": "PAYMENT",
@@ -115,12 +115,11 @@
                         "currency": "LKR",
                         "amount": $('#pr_amount').val(),
                         "customer_token": $('#pr_customer_token').val(),
-                        "custom_1": null,
-                        "custom_2": null,
-                        "notify_url": $('#pr_notify_url').val(),
+                        "custom_1": 'ddd',
+                        "custom_2": 'sss',
+                        "notify_url":"https://ci4ajax.herokuapp.com/client/verifyOrder",
                         "itemList":[$('#pr_order_title').val()],
                     }
-                    console.log(auth);
                     console.log(data);
                 
                     $.ajax({
