@@ -220,6 +220,7 @@
                 method:"GET",
                 url:"getallsub",
                 success:function(response){
+                    console.log(response.data);
                     $.each(response.data,function(key,val){
                         console.log(key,val);
                     })
