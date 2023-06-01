@@ -150,7 +150,7 @@ class OrderController extends BaseController
         $curl->setHeader('Authorization',$auth_code);
         $curl->setBody($body);
 
-        $response = $this->response->setJSON($curl->request('POST',$url));
+        $response = ($curl->request('POST',$url));
         
         log_message('alert',json_encode($response));
         return $response;
@@ -205,7 +205,7 @@ class OrderController extends BaseController
 
         // $res = ($curl->request('POST',$url,$options));
 
-        return $this->accessTokenGen();
+        return $this->response->setJSON($this->accessTokenGen());
         
 
 
