@@ -243,9 +243,9 @@ class OrderController extends BaseController
 
      public function findOrder() {
         $order_id= $this->request->getVar();
-        log_message('alert',json_encode($order_id));
+        log_message('alert',$order_id['order_id']);
         //$url="https://eokwyobr35ggdi5.m.pipedream.net";
-        $url='https://sandbox.payhere.lk/merchant/v1/payment/search?order_id='+$order_id['order_id']+'';
+        $url='https://sandbox.payhere.lk/merchant/v1/payment/search?order_id='.$order_id['order_id'].'';
 
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
