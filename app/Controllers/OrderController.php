@@ -144,7 +144,6 @@ class OrderController extends BaseController
         $url='https://sandbox.payhere.lk/merchant/v1/oauth/token';
 
         $body = http_build_query(array('grant_type'=>'client_credentials'));
-        $header=array('Authorization'=>$auth_code);
 
         $curl=Services::curlrequest();
         $curl->setHeader('Authorization',$auth_code);
@@ -153,34 +152,7 @@ class OrderController extends BaseController
         $response = ($curl->request('POST',$url));
         
         log_message('alert',json_encode($response));
-        return $response;
-
-
-
-        
-
-        // $options=[
-        //     'headers'=>['Authorization: Basic '=>$auth_code],
-
-        //     'body'=>['grant_type'=>'client_credentials']
-        // ];
-
-
-        // log_message('alert',json_encode($options));
-        // $curl=Services::curlrequest();
-
-        // $x=$this->response->setJSON($curl->request('POST',$url,$options));
-        // $x=$this->response->setJSON($curl->post($url,$options));
-        // log_message('alert',json_encode($x));
-
-        // return $x;
-
-
-        // return ($curl->request('POST',$url,$options));
-        
-
-        
-
+        return $response['access_token'];
 
     }
 
@@ -188,7 +160,7 @@ class OrderController extends BaseController
     public function toChargingAPI(){
 
         // $data = $this->request->getVar();
-        // $access_t="75e0ac0b-1067-4fb4-ae57-2cc0ada30ccc";
+        // $access_t=;
 
         // $auth = 'Bearer ' .$access_t;
         // $url = 'https://sandbox.payhere.lk/merchant/v1/payment/charge';
