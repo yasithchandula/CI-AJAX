@@ -152,7 +152,7 @@ class OrderController extends BaseController
         $response = ($curl->request('POST',$url));
         
         log_message('alert',json_encode($response));
-        return $response['access_token'];
+        return $response->access_token;
 
     }
 
