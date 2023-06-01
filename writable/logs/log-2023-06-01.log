@@ -1,15 +1,63 @@
-INFO - 2023-06-01 04:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ALERT - 2023-06-01 04:21:22 --> 205
-ALERT - 2023-06-01 04:21:23 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
-ALERT - 2023-06-01 04:21:23 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
-ALERT - 2023-06-01 04:21:23 --> 205
-ALERT - 2023-06-01 04:21:24 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
-CRITICAL - 2023-06-01 04:21:25 --> json_decode(): Argument #1 ($json) must be of type string, array given
-in APPPATH\Controllers\OrderController.php on line 170.
- 1 APPPATH\Controllers\OrderController.php(170): json_decode([...])
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->toChargingAPI()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
-ALERT - 2023-06-01 04:21:59 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"]}
+INFO - 2023-06-01 04:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:41:58 --> 205
+ALERT - 2023-06-01 04:41:59 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:41:59 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:41:59 --> 205
+ALERT - 2023-06-01 04:42:00 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:42:01 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"],"notify_url":"https:\/\/ci4ajax.herokuapp.com\/client\/verifyOrder"}
+INFO - 2023-06-01 04:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:44:47 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-06-01 04:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:44:49 --> 205
+ALERT - 2023-06-01 04:44:51 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:44:51 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:44:51 --> 205
+ALERT - 2023-06-01 04:44:51 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:44:52 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"],"notify_url":"https:\/\/ci4ajax.herokuapp.com\/client\/verifyOrder"}
+INFO - 2023-06-01 04:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:49:40 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-06-01 04:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:49:41 --> 205
+ALERT - 2023-06-01 04:49:43 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:49:43 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:49:43 --> 205
+ALERT - 2023-06-01 04:49:43 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:49:44 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"],"notify_url":"https:\/\/ci4ajax.herokuapp.com\/client\/verifyOrder"}
+INFO - 2023-06-01 04:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:54:14 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-06-01 04:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:54:18 --> 205
+ALERT - 2023-06-01 04:54:19 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:54:19 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:54:19 --> 205
+ALERT - 2023-06-01 04:54:20 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:54:22 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"],"notify_url":"https:\/\/ci4ajax.herokuapp.com\/client\/verifyOrder"}
+CRITICAL - 2023-06-01 04:54:22 --> strlen(): Argument #1 ($string) must be of type string, array given
+in SYSTEMPATH\HTTP\CURLRequest.php on line 444.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(444): strlen([...])
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(373): CodeIgniter\HTTP\CURLRequest->applyMethod('POST', [...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send('POST', 'https://eokwyobr35ggdi5.m.pipedream.net')
+ 4 APPPATH\Controllers\OrderController.php(187): CodeIgniter\HTTP\CURLRequest->request('POST', 'https://eokwyobr35ggdi5.m.pipedream.net')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\OrderController->toChargingAPI()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Yasit\\Desktop\\Bhasha\\CI-AJAX\\public\\index.php')
+INFO - 2023-06-01 04:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 04:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:55:01 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-06-01 04:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 04:55:04 --> 205
+ALERT - 2023-06-01 04:55:06 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:55:06 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:55:06 --> 205
+ALERT - 2023-06-01 04:55:06 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 04:55:07 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"],"notify_url":"https:\/\/ci4ajax.herokuapp.com\/client\/verifyOrder"}
+ALERT - 2023-06-01 04:55:21 --> {"type":"PAYMENT","order_id":"205","items":"Course Fee","currency":"LKR","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","custom_1":"","custom_2":"","itemList":["CDFS"],"notify_url":"https:\/\/ci4ajax.herokuapp.com\/client\/verifyOrder"}
