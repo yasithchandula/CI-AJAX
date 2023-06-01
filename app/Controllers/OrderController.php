@@ -179,7 +179,8 @@ class OrderController extends BaseController
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
         //$body=json_encode($data);
-        $headers=array('Authorization' =>$auth,'content-type' =>'application/json');
+        $headers=array('Authorization' =>$auth,
+        'content-type' =>'application/json');
 
         // $curl=Services::curlrequest();
         // $curl->setHeader('Authorization',$auth);
