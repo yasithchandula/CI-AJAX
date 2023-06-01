@@ -171,7 +171,7 @@ class OrderController extends BaseController
 
         $data['notify_url']='https://ci4ajax.herokuapp.com/client/verifyOrder';
 
-        $url='https://sandbox.payhere.lk/merchant/v1/payment/charge';
+        $url='https://sandbox.payhere.lk/stagingmerchant/v1/payment/charge';
 
         
        
@@ -179,8 +179,8 @@ class OrderController extends BaseController
         $access_t=$this->accessTokenGen();
         $auth = 'Bearer ' .$access_t;
         //$body=json_encode($data);
-        $headers=array('Authorization' =>$auth,
-        'content-type' =>'application/json');
+        $headers=array('Authorization:'.$auth,
+        'content-type: application/json');
 
         // $curl=Services::curlrequest();
         // $curl->setHeader('Authorization',$auth);

@@ -1,0 +1,10 @@
+INFO - 2023-06-01 06:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 06:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 06:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 06:40:02 --> {"order":[{"order_id":"179","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":null},{"order_id":"185","sID":"19","order_title":"DIPSN","status_message":"Successfully received the VISA payment","amount":"2500"},{"order_id":"186","sID":"19","order_title":"BScCNSE","status_message":"Successfully received the VISA payment","amount":"1500"},{"order_id":"205","sID":"19","order_title":"CDFS","status_message":"Successfully received the VISA payment","amount":"4575"}]}
+INFO - 2023-06-01 06:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-01 06:40:04 --> 205
+ALERT - 2023-06-01 06:40:06 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 06:40:06 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
+ALERT - 2023-06-01 06:40:06 --> 205
+ALERT - 2023-06-01 06:40:06 --> {"order_id":"205","order_title":"CDFS","amount":"4575","customer_token":"415EBD18E44D4F018950DFF13D6CFEA0","Authorization":"d7bf3cf8-1261-4788-8d9b-3cfb97f0ced5"}
