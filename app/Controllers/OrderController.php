@@ -144,7 +144,7 @@ class OrderController extends BaseController
         $url='https://sandbox.payhere.lk/merchant/v1/oauth/token';
 
         $options=[
-            'headers'=>['Authorization'=>'Basic ' .$auth_code, 'Content-Type'=>'application/x-www-form-urlencoded'],
+            'headers'=>['Authorization: Basic '=>$auth_code, 'Content-Type'=>'application/x-www-form-urlencoded'],
 
             'body'=>json_encode(['grant_type'=>'client_credentials'])
         ];
