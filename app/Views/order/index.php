@@ -296,7 +296,7 @@
 
                     $.each(data.data,function(key,value){
                         $('.payment_d_table').append('<tr>\
-                        <td class="order_id">'+(value.payment_id)+'</td>\
+                        <td class="payment_id">'+(value.payment_id)+'</td>\
                         <td>'+(value.order_id)+'</td>\
                         <td>'+(value.date)+'</td>\
                         <td>'+(value.description)+'</td>\
