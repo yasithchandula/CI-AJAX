@@ -202,7 +202,7 @@
                                         "unit_amount": $('#pr_amount').val()
                                     }],
                                             }
-                    // console.log(data);
+                    console.log(data);
                 
                     $.ajax({
                         method:"POST",
@@ -213,7 +213,7 @@
 
                             $('#cg_para').append(
                                 '<p>'+data.msg+'</p>\
-                                <p> payment ID : '+data.data.payment_id+'</p>');
+                                <p> payment ID : '+data.data+'</p>');
 
                             $('#prePayment').modal('hide');
                             $('#chargingcompleted').modal('show');
