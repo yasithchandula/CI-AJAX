@@ -34,6 +34,7 @@ class Order extends Model
         'customer_token',
         'status_message',
         'amount',
+        'payment_id',
 
 
 
@@ -99,6 +100,7 @@ class Order extends Model
         );
 
         $toDB=[
+            'payment_id'=>'0',
             'order_id'=>$orderID,
             'cID'=>$data['cID'],
             'sID'=>$data['sID'],
@@ -189,6 +191,7 @@ class Order extends Model
                         'item_rec_install_paid'=>$data['item_rec_install_paid'],
                         'status_message '=>$data['status_message'],
                         'amount'=>$data['payhere_amount'],
+                        'payment_id'=>$data['payment_id'],
                     ];
 
                     log_message("alert",json_encode($data));
@@ -202,6 +205,7 @@ class Order extends Model
                         'customer_token'=>$data['customer_token'],
                         'status_message'=>$data['status_message'],
                         'amount'=>$data['payhere_amount'],
+                        'payment_id'=>$data['payment_id']
                     ];
 
                     log_message("alert",json_encode($data));
@@ -215,6 +219,7 @@ class Order extends Model
                         'status'=>$data['status_code'],
                         'status_message'=>$data['status_message'],
                         'amount'=>$data['payhere_amount'],
+                        'payment_id'=>$data['payment_id'],
                     ];
 
                     log_message("alert",json_encode($data));
@@ -280,7 +285,7 @@ class Order extends Model
 
         $builder=$this->db->table('orders');
 
-        $data = $builder->select('order_id,sID,order_title,status_message,amount')->where('customer_token IS NOT NULL AND LENGTH(customer_token)>0',NULL,false)->get()->getResult();
+        $data = $builder->select('order_id,sID,order_title,status_message,amount,payment_id')->where('customer_token IS NOT NULL AND LENGTH(customer_token)>0',NULL,false)->get()->getResult();
 
         
         // log_message('alert','preapproved');
@@ -301,7 +306,7 @@ class Order extends Model
 
         $builder=$this->db->table('orders');
 
-        $data = $builder->select('order_id,sID,order_title,status_message,amount')->where('customer_token IS NOT NULL AND LENGTH(customer_token)>0',NULL,false)->get()->getResult();
+        $data = $builder->select('order_id,sID,order_title,status_message,amount,payment_id')->where('customer_token IS NOT NULL AND LENGTH(customer_token)>0',NULL,false)->get()->getResult();
 
         
         // log_message('alert','preapproved');
