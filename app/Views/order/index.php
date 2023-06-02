@@ -103,13 +103,29 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="courseModalLabel">Payment Details</h1>
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Payment Details For Order ID : <label id='orderno'></label></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div id="py_details">
+                            
 
-                            </div>
+                            <table class="table table-bordered">
+                                <caption>List of Orders</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">PaymentID</th>
+                                        <th scope="col">OrderID</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Status</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody class="payment_d_table">
+                                </tbody>
+                            </table>
+
+                      
 
                         </div>
                     </div>
@@ -209,7 +225,7 @@
 
 
     /**
-     * Load all the course records from the database
+     * Load the order details from the database
      */
 
         function preapprovedOrders(){
@@ -236,15 +252,25 @@
         }
 
 
+        /**
+         * -Display payment details modal
+         */
+
+
         $(document).on('click','#nav_findorder',function(){
             $('.findOrder').modal('show');
         })
 
 
 
+        /**
+         * -fetch payment details from order id
+         */
+
         $(document).on('click','.f_orderbtn',function(){
 
             var data={'order_id':$('#f_orderid').val()};
+            $('#orderno').append($('#f_orderid').val());
             
             console.log(data);
 
@@ -253,10 +279,27 @@
                 url:"orders/findorder",
                 data:data,
                 success:function(response){
-                    console.log(response);
+                    var data=JSON.parse(response);
+                    $.each(data.data,function(key,value){
+                        console.log(key,value);
+                    })
+                    console.log(data);
+
                     $('.findOrder').modal('hide');
 
-                    $('#py_details').append('<p>'+response+'</p>');
+                    $.each(data.data,function(key,value){
+                        $('.payment_d_table').append('<tr>\
+                        <td class="order_id">'+(value.payment_id)+'</td>\
+                        <td>'+(value.order_id)+'</td>\
+                        <td>'+(value.date)+'</td>\
+                        <td>'+(value.description)+'</td>\
+                        <td>'+(value.status)+'</td>\
+                        </tr>');
+                    })
+                    var nos=((data.data).length);
+                    console.log(nos);
+
+                    $('#py_details').append('<p>'+(response)+'</p>');
 
 
                     $('.paymentDetails').modal('show');

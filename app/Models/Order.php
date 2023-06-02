@@ -293,6 +293,24 @@ class Order extends Model
     }
 
 
+    /**
+     * get all the general order list
+     */
+
+     public function getGeneralOrders(){
+
+        $builder=$this->db->table('orders');
+
+        $data = $builder->select('order_id,sID,order_title,status_message,amount')->where('customer_token IS NOT NULL AND LENGTH(customer_token)>0',NULL,false)->get()->getResult();
+
+        
+        // log_message('alert','preapproved');
+        // log_message('alert',json_encode($data));
+
+        return ($data);
+     }
+
+
 
     public function toPayhereChargin($order_id){
 

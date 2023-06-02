@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Order;
+use CodeIgniter\CLI\Console;
 use CodeIgniter\HTTP\CURLRequest;
 use CodeIgniter\HTTP\ResponseInterface;
 use Config\Services;
@@ -294,15 +295,116 @@ class OrderController extends BaseController
         curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
         $head = curl_exec($ch);
         curl_close($ch);
+        
 
         if (!$head) {
             return FALSE;
         } else {
-            return json_decode($head);
+            return $head;
         }
         return FALSE;
 
       }
+
+
+      public function findSubscription(){
+        $sub_id=$this->request->getVar();
+        log_message('alert',json_encode($sub_id['subscription_id']));
+
+        $access_t=$this->accessTokenGen();
+        $auth = 'Bearer ' .$access_t;
+
+        $headers=array('Authorization:'.$auth,
+        'content-type: application/json');
+
+        $url="https://sandbox.payhere.lk/merchant/v1/subscription/".$sub_id['subscription_id']."/payments";
+
+        $ch=curl_init();
+        curl_setopt($ch,CURLOPT_URL,$url);
+        curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch,CURLOPT_HTTPGET,1);
+        $response=curl_exec($ch);
+        curl_close($ch);
+
+        if (!$response) {
+            return FALSE;
+        } else {
+            return $response;
+        }
+
+      }
+
+
+      /**
+       * - Retry Subscription Payment
+       * 
+       */
+
+       public function retrySub(){
+        
+        $sub_id=$this->request->getVar();
+
+        $access_t=$this->accessTokenGen();
+        $auth = 'Bearer ' .$access_t;
+
+        $headers=array('Authorization:'.$auth,
+        'content-type: application/json');
+
+        $url = "https://sandbox.payhere.lk/merchant/v1/subscription/retry";
+
+        $ch=curl_init();
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_URL,$url);
+        curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($sub_id));
+
+        $response=curl_exec($ch);
+        curl_close($ch);
+
+        if (!$response) {
+            return FALSE;
+        } else {
+            return $response;
+        }
+
+
+       }
+
+
+
+       /**
+        * - To cancel the subscription
+        */
+
+        public function cancelSub(){
+            $sub_id=$this->request->getVar();
+
+            $access_t=$this->accessTokenGen();
+            $auth = 'Bearer '.$access_t;
+
+            $headers=array('Authorization:'.$auth,
+            'content-type: application/json');
+
+            $url = "https://sandbox.payhere.lk/merchant/v1/subscription/cancel";
+
+            $ch=curl_init();
+            curl_setopt($ch, CURLOPT_POST, TRUE);
+            curl_setopt($ch, CURLOPT_URL,$url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($sub_id));
+
+            $response=curl_exec($ch);
+            curl_close($ch);
+
+            if (!$response) {
+                return FALSE;
+            } else {
+                return $response;
+            }
+        }
 
 
     

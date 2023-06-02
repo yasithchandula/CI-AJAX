@@ -38,62 +38,48 @@
     </div>
 
 
-<!--Carging api-->
-                <div class="modal fade prePayment" id="prePayment" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+
+                <!--Subscription Details-->
+                <div class="modal fade subscriptionDetails" id="subscriptionDetails" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="courseModalLabel">Update course</h1>
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Subscription Details For Subscription ID : <label id="sub_order_id"></label></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="hidden_pre_pay">
-
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger toPrePaybtn" > Confirm Payment </button>
+                        <table class="table table-bordered">
+                                <caption>List of Orders</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">PaymentID</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="payment_d_table">
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     </div>
                 </div>
 
-<!--Carging completed-->
-<div class="modal fade chargingcompleted" id="chargingcompleted" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+
+                <!--Retry Payment-->
+                <div class="modal fade retrySubPayment" id="retrySubPayment" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="courseModalLabel">Payment Details</h1>
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Subscription Retry Result: <label id="sub_order_id"></label></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div id="cg_para">
+                            <div class="retryResponse">
 
                             </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger toPrePaybtn" > Confirm Payment </button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-<!--findOrder-->
-<div class="modal fade findOrder" id="findOrder" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="courseModalLabel">Find Order</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <label>Enter Order ID to get payment details </label>
-                            <input type="text" class="form-control" id="f_orderid" placeholder="Enter Order ID">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger f_orderbtn" > Find Order Details </button>
                         </div>
                     </div>
                     </div>
@@ -101,19 +87,18 @@
 
 
 
-                <!--Payment Details-->
-                <div class="modal fade paymentDetails" id="paymentDetails" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                <!--Cancel Subscription-->
+                <div class="modal fade cancelSubModal" id="cancelSubModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="courseModalLabel">Payment Details</h1>
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Subscription Status <label id="sub_order_id"></label></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div id="py_details">
+                            <div class="cancelResponse">
 
                             </div>
-
                         </div>
                     </div>
                     </div>
@@ -220,9 +205,26 @@
                 method:"GET",
                 url:"getallsub",
                 success:function(response){
-                    $.each(response,function(key,value){
-                        console.log(key);
+                    var data=JSON.parse(response);
+                    // console.log(data.data);
+                    $.each(data.data,function(key,value){
+                        $('.subcriptionData').append('<tr>\
+                        <td class="subscription_id">'+(value.subscription_id)+'</td>\
+                        <td>'+(value.order_id)+'</td>\
+                        <td>'+(value.date)+'</td>\
+                        <td>'+(value.description)+'</td>\
+                        <td>'+(value.recurring)+'</td>\
+                        <td>'+(value.status)+'</td>\
+                        <td>'+(value.amount)+'</td>\
+                        <td> <a href="#" class="badge btn btn-success sub_pay_view">View Payment Details</a><br>\
+                        <a href="#" class="badge btn btn-primary sub_pay_retry">Retry Payment</a><br>\
+                        <a href="#" class="badge btn btn-danger sub_pay_cancel">Cancel Subscription</a>\
+                        </td>\
+                        </tr>');
+                        
                     })
+
+
                     // $.each(response.order,function(key,value){
                     //     console.log(key,value);
                     //     $('.orderdata').append('<tr>\
@@ -239,6 +241,99 @@
                 }
             })
         }
+
+        $(document).on('click','.sub_pay_view',function(){
+            var sub_id={
+                'subscription_id':$(this).closest('tr').find('.subscription_id').text()
+            }
+            console.log(sub_id);
+
+            $.ajax({
+                method:"POST",
+                url:"findSubscription",
+                data:(sub_id),
+                success:function(response){
+                    var data=JSON.parse(response);
+                    console.log(data);
+                    $.each(data.data,function(key,value){
+                        $('.payment_d_table').append('<tr>\
+                        <td class="subscription_id">'+(value.payment_id)+'</td>\
+                        <td>'+(value.date)+'</td>\
+                        <td>'+(value.amount)+'</td>\
+                        <td>'+(value.description)+'</td>\
+                        <td>'+(value.status)+'</td>\
+                        </tr>');
+                        
+                    })
+
+                    $('#sub_order_id').append(sub_id.subscription_id).text();
+
+                    $('.subscriptionDetails').modal('show');
+
+                }
+
+            })
+                
+
+        })
+
+        $('.subscriptionDetails').on('hidden.bs.modal', function(){
+                $(".payment_d_table").html('');
+                $('#sub_order_id').html('');
+        });
+
+        $(document).on('click','.sub_pay_retry',function(){
+            var sub_id={
+               'subscription_id':$(this).closest('tr').find('.subscription_id').text()
+            }
+            
+            $.ajax({
+                method:"POST",
+                url:'retrysub',
+                data:sub_id,
+                success:function(response){
+                    var data=JSON.parse(response);
+                    console.log(data.msg);
+
+                    $('.retryResponse').append(data.msg);
+
+                }
+            })
+
+            $('.retrySubPayment').modal('show');
+        })
+
+        $('.retrySubPayment').on('hidden.bs.modal', function(){
+                $(".retryResponse").html('');
+        });
+
+
+
+        $(document).on('click','.sub_pay_cancel',function(){
+            var sub_id={
+               'subscription_id':$(this).closest('tr').find('.subscription_id').text()
+            };
+
+            $.ajax({
+                method:"POST",
+                url:'cancelSub',
+                data:sub_id,
+                success:function(response){
+                    var data=JSON.parse(response);
+                    console.log(data.msg);
+
+                    $('.cancelResponse').append(data.msg);
+
+                }
+            })
+
+            $('.cancelSubModal').modal('show');
+
+        })
+
+        
+        
+        
 
 
         // $(document).on('click','#nav_findorder',function(){

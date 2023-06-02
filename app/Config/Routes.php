@@ -87,6 +87,9 @@ $routes->get('usercheck','LoginController::checkSession');
   $routes->post('orders/findorder','OrderController::findOrder');
   $routes->get('orders/subcription','OrderController::subcriptionIndex');
   $routes->get('orders/getallsub','OrderController::getAllSubcription');
+  $routes->post('orders/findSubscription','OrderController::findSubscription');
+  $routes->post('orders/retrysub','OrderController::retrySub');
+  $routes->post('orders/cancelSub','OrderController::cancelSub');
 
 
 
