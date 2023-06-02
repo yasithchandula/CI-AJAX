@@ -211,8 +211,8 @@
                             var data=JSON.parse(response)
 
                             $('#cg_para').append(
-                                '<p>'+data.status+'</p>'
-                            );
+                                '<p>'+data.msg+'</p>\
+                                <p> payment ID : '+data.data.payment_id+'</p>');
 
                             $('#prePayment').modal('hide');
                             $('#chargingcompleted').modal('show');
