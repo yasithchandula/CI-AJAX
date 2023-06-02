@@ -71,7 +71,7 @@
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger toPrePaybtn" > Confirm Payment </button>
+
                         </div>
                     </div>
                     </div>
