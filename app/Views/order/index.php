@@ -208,9 +208,10 @@
                         url:"tochargingapi",
                         data:data,
                         success:function(response){
+                            var data=JSON.parse(response)
 
                             $('#cg_para').append(
-                                '<p>'+response.status+'</p>'
+                                '<p>'+data.status+'</p>'
                             );
 
                             $('#prePayment').modal('hide');
