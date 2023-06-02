@@ -40,13 +40,14 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="courseModalLabel">Update course</h1>
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Charging Confirmation</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="hidden_pre_pay">
 
                             </div>
+                            <label>Do you want to charge from the client?</label>
 
                         </div>
                         <div class="modal-footer">
