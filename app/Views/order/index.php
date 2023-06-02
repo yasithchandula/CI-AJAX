@@ -152,8 +152,8 @@
 
 
         /**
-         * - Listning to click on edit button
-         * - Load the Course edit modal and pass the parameters to input fields on the modal
+         * - Listning to click on get payment button
+         * - Load the relevnat params of the modal
          */
         $(document).on('click','.get-payment',function(){
             var order_id = $(this).closest('tr').find('.order_id').text();
@@ -194,7 +194,12 @@
                         "custom_1": 'ddd',
                         "custom_2": 'sss',
                         "notify_url":"https://ci4ajax.herokuapp.com/client/verifyOrder",
-                        "itemList":[''],
+                        "itemList":[{
+                                        "name":$('#pr_order_title').val(),
+                                        "number": "1",
+                                        "quantity": 1,
+                                        "unit_amount": $('#pr_amount').val()
+                                    }],
                                             }
                     // console.log(data);
                 
