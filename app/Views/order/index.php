@@ -358,7 +358,7 @@
 
                     $.ajax({
                     method:"POST",
-                    url:"paymentRefund",
+                    url:"orders/paymentRefund",
                     data:data,
                     success:function(response){
                             var data=JSON.parse(response);
