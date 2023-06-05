@@ -72,7 +72,7 @@ $routes->get('usercheck','LoginController::checkSession');
  $routes->get('client/course_fetch','courseController::fetch',['filter'=>'auth']);
  $routes->post('client/client_pay','OrderController::clientPay');
  $routes->post('client/course_edit','OrderController::payClick');
- $routes->post('client/verifyOrder','OrderController::verifyOrder');
+ $routes->post('client/verifyOrders','OrderController::verifyOrder');
  $routes->get('client/return','OrderController::returnOrder');
 
  /**

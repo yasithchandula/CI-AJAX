@@ -1,0 +1,5 @@
+INFO - 2023-06-05 12:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-05 12:26:00 --> notify url
+ALERT - 2023-06-05 12:26:00 --> {"merchant_id":"1223220","order_id":"239","authorization_token":"0978d8c7-2613-4c12-8050-fa6fa2fa4844","payhere_amount":"1250.00","payhere_currency":"LKR","status_code":"3","md5sig":"06F217EC4AE29984141107D0925F5964","custom_1":"","custom_2":"","status_message":"Successfully authorized VISA payment","method":"VISA","card_holder_name":"sadsad","card_no":"************1292","card_expiry":"09\/25","recurring":"0"}
+ALERT - 2023-06-05 12:26:00 --> request in ordercontroller
+ALERT - 2023-06-05 12:26:00 --> {"merchant_id":"1223220","order_id":"239","authorization_token":"0978d8c7-2613-4c12-8050-fa6fa2fa4844","payhere_amount":"1250.00","payhere_currency":"LKR","status_code":"3","md5sig":"06F217EC4AE29984141107D0925F5964","custom_1":"","custom_2":"","status_message":"Successfully authorized VISA payment","method":"VISA","card_holder_name":"sadsad","card_no":"************1292","card_expiry":"09\/25","recurring":"0"}

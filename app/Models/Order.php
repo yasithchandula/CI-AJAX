@@ -117,7 +117,7 @@ class Order extends Model
             'merchant_id'=>$merchant_id,
             'return_url'=>'https://ci4ajax.herokuapp.com/client/index',
             'cancel_url'=>'https://ci4ajax.herokuapp.com/client/order_cancel',
-            'notify_url'=>'https://ci4ajax.herokuapp.com/client/verifyOrder',
+            'notify_url'=>'https://ci4ajax.herokuapp.com/client/verifyOrders',
             'first_name'=>$data['firstName'],
             'last_name'=>$data['lastName'],
             'email'=>$data['email'],
@@ -172,7 +172,7 @@ class Order extends Model
         log_message('alert',"request in ordercontroller");
         log_message('alert',json_encode($data));
 
-        if(($local_md5sig==$data['md5sig']) AND ($data['status_code']==2)){
+        if(($local_md5sig==$data['md5sig']) AND (($data['status_code']==2)OR($data['status_code']==3))){
 
 
             log_message('alert',"Passed verification");
@@ -222,7 +222,6 @@ class Order extends Model
                         'authorization_token'=>$data['authorization_token'],
                         'status_message'=>$data['status_message'],
                         'amount'=>$data['payhere_amount'],
-                        'payment_id'=>$data['payment_id']
                     ];
                     log_message("alert",'xxxxxxxx');
                     log_message("alert",json_encode($data));
