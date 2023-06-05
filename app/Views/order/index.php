@@ -148,11 +148,11 @@
                             </div>
                             <label>Why do you refund the payment</label>
 
-                            <inpuy type="text" id="refundMessage" placeholder="Refund Message">
+                            <input type="text" id="refundMessage" placeholder="RefundMessage">
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger toPrePaybtn" > Confirm Payment </button>
+                            <button type="button" class="btn btn-danger toRefund" > Confirm Payment </button>
                         </div>
                     </div>
                     </div>
@@ -354,18 +354,28 @@
             var data={  "payment_id": $(this).closest('#r_payment_id').val(),
                         "description":$('#refundMessage').val(),};
 
-            $.ajax({
-                method:"POST",
-                url:"paymentRefund",
-                data:data,
-                success:function(response){
-                        var data=JSON.parse(response);
-                        console.log(data);
+            if($(docoument).on('click','.toRefund')){
+                function refund (){
+                    $.ajax({
+                    method:"POST",
+                    url:"paymentRefund",
+                    data:data,
+                    success:function(response){
+                            var data=JSON.parse(response);
+                            console.log(data);
+                    }
+                })
+
                 }
+                refund();
+
+            }
+
+
+
             })
-
-
-         })
+            
+        
 
 
 
