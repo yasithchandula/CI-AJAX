@@ -354,8 +354,8 @@
             var data={  "payment_id": $(this).closest('#r_payment_id').val(),
                         "description":$('#refundMessage').val(),};
 
-            if($(document).on('click','.toRefund')){
-                function refund (){
+            $(document).on('click','.toRefund',function() {
+
                     $.ajax({
                     method:"POST",
                     url:"paymentRefund",
@@ -366,12 +366,7 @@
                     }
                 })
 
-                }
-                refund();
-
-            }
-
-
+                })
 
             })
             
