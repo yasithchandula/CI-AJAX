@@ -169,12 +169,14 @@ class Order extends Model
                 strtoupper(md5($merchant_secret)) 
             ) 
         );
-        
+        log_message('alert',"request in ordercontroller");
+        log_message('alert',json_encode($data));
 
         if(($local_md5sig==$data['md5sig']) AND ($data['status_code']==2)){
 
 
-
+            log_message('alert',"Passed verification");
+            log_message('alert',json_encode($data));
             try
             {
                 
@@ -222,7 +224,7 @@ class Order extends Model
                         'amount'=>$data['payhere_amount'],
                         'payment_id'=>$data['payment_id']
                     ];
-
+                    log_message("alert",'xxxxxxxx');
                     log_message("alert",json_encode($data));
                     $builder->where('order_id',$data['order_id'])->update($dbData);
 
