@@ -160,6 +160,33 @@
 
 
 
+            <!-- Authorize API -->
+            <div class="modal fade" id="authorize_pay" tabindex="-1" aria-labelledby="clientPayLabel" aria-hidden="true">
+                <form id='toPayhere' action="https://sandbox.payhere.lk/pay/authorize"  method="POST">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="clientPayLabel">Confirm Authorize Payment</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                        <div class="input_hidden">
+
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="submit"  class="btn btn-danger">Confirm Payment</button>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+
+            </div>
+
+
 
     <!--Recursive Model-->
     <div class="modal fade" id="recursive_payment" tabindex="-1" aria-labelledby="clientPayLabel" aria-hidden="true">
@@ -235,6 +262,12 @@
                             
                         </div><br>
 
+                        <div class="form-group">
+                        <label for="inputcity" class="form-label"><h5>Authorize : </h5></label>
+                        <button class="btn btn-warning btn-lg " type="submit" id="authorizeButton" >Authorize Pay</button>
+                            
+                        </div><br>
+
                         <div class="modal-footer">
                             <button type="submit"  class="btn btn-danger">Confirm Payment</button>
                         </div>
@@ -307,6 +340,11 @@
         $(document).on('click','.preapproval',function(){
             $('#payment').modal('hide');
             $('#preapproval_payment').modal('show');
+        })
+
+        $(document).on('click','#authorizeButton',function(){
+            $('#payment').modal('hide');
+            $('#authorize_pay').modal('show');
         })
 
         
@@ -453,6 +491,9 @@
                 }
             })
         }
+
+
+
 
 
     </script>

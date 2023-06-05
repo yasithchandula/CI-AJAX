@@ -35,7 +35,7 @@
     </div>
 
 
-<!--Carging api-->
+                <!--Carging api-->
                 <div class="modal fade prePayment" id="prePayment" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -57,8 +57,8 @@
                     </div>
                 </div>
 
-<!--Carging completed-->
-<div class="modal fade chargingcompleted" id="chargingcompleted" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                <!--Carging completed-->
+                <div class="modal fade chargingcompleted" id="chargingcompleted" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
@@ -78,8 +78,8 @@
                     </div>
                 </div>
 
-<!--findOrder-->
-<div class="modal fade findOrder" id="findOrder" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                <!--findOrder-->
+                <div class="modal fade findOrder" id="findOrder" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
@@ -125,9 +125,6 @@
                                 <tbody class="payment_d_table">
                                 </tbody>
                             </table>
-
-                      
-
                         </div>
                     </div>
                     </div>
@@ -148,7 +145,7 @@
                             </div>
                             <label>Why do you refund the payment</label>
 
-                            <input type="text" id="refundMessage" placeholder="RefundMessage">
+                            <input type="text"  class="form-control"  id="refundMessage" placeholder="RefundMessage">
 
                         </div>
                         <div class="modal-footer">
@@ -157,6 +154,30 @@
                     </div>
                     </div>
                 </div>
+
+
+                <!--Refund Confirmation-->
+                <div class="modal fade refundCompletion" id="refundCompletion" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Refund Status</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                           <div class="refundComp">
+
+                           </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger toRefund" > Confirm Payment </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
 
 
 
@@ -237,8 +258,8 @@
                             var dat=JSON.parse(response)
 
                             $('#cg_para').append(
-                                '<p>'+dat.msg+'</p>\
-                                <p> payment ID : '+dat.data.payment_id+'</p>');
+                                '<p><h6>'+dat.msg+'</h6></p>\
+                                <p><h6> payment ID : '+dat.data.payment_id+'</h6></p>');
 
                             $('#prePayment').modal('hide');
                             $('#chargingcompleted').modal('show');
@@ -321,7 +342,7 @@
 
                     $.each(data.data,function(key,value){
                         $('.payment_d_table').append('<tr>\
-                        <td class="r_payment_id">'+(value.payment_id)+'</td>\
+                        <td class="ref_payment_id">'+(value.payment_id)+'</td>\
                         <td>'+(value.date)+'</td>\
                         <td>'+(value.description)+'</td>\
                         <td>'+(value.status)+'</td>\
@@ -331,8 +352,9 @@
                     })
                     var nos=((data.data).length);
                     console.log(nos);
+                    console.log($('.ref_payment_id').val());
 
-                    $('#py_details').append('<p>'+(response)+'</p>');
+                    $('#py_details').append('<p><h6>'+(response)+'<h6></p>');
 
 
                     $('.paymentDetails').modal('show');
@@ -349,20 +371,29 @@
          */
 
          $(document).on('click','.pay-refund',function(){
+            
+            var datt={"payment_id": $(this).closest('tr').find('.ref_payment_id').text()};
+
             $('#refundConfirm').modal('show');
 
-            var data={  "payment_id": $(this).closest('#r_payment_id').val(),
-                        "description":$('#refundMessage').val(),};
-
             $(document).on('click','.toRefund',function() {
+                datt['description'] =$('#refundMessage').val();
+                
+                console.log(datt);
 
                     $.ajax({
                     method:"POST",
                     url:"orders/paymentRefund",
-                    data:data,
+                    data:datt,
                     success:function(response){
                             var data=JSON.parse(response);
                             console.log(data);
+                            
+                            $('.refundComp').append('<p><h6>'+data.msg+'</h6></p>')
+
+                            $('#refundConfirm').modal('hide');
+                            $('.refundCompletion').modal('show');
+
                     }
                 })
 

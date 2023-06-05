@@ -419,7 +419,6 @@ class OrderController extends BaseController
             $data=[
                 'payment_id' => $this->request->getVar('payment_id'),
                 'description'=>$this->request->getVar('description'),
-                'authorization_token'=>$access_t,
             ];
 
             $headers=array('Authorization:'.$auth,

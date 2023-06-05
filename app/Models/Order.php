@@ -35,6 +35,7 @@ class Order extends Model
         'status_message',
         'amount',
         'payment_id',
+        'authorization_token',
 
 
 
@@ -213,7 +214,19 @@ class Order extends Model
 
 
                 }
-                else{
+                else if (array_key_exists('authorization_token',$data)){
+                    $dbData=[
+                        'status'=>$data['status_code'],
+                        'authorization_token'=>$data['authorization_token'],
+                        'status_message'=>$data['status_message'],
+                        'amount'=>$data['payhere_amount'],
+                        'payment_id'=>$data['payment_id']
+                    ];
+
+                    log_message("alert",json_encode($data));
+                    $builder->where('order_id',$data['order_id'])->update($dbData);
+
+                }else{
 
                     $dbData=[
                         'status'=>$data['status_code'],
