@@ -209,11 +209,11 @@
                         url:"tochargingapi",
                         data:data,
                         success:function(response){
-                            var data=JSON.parse(response)
+                            var dat=JSON.parse(response)
 
                             $('#cg_para').append(
-                                '<p>'+data.msg+'</p>\
-                                <p> payment ID : '+data.data+'</p>');
+                                '<p>'+dat.msg+'</p>\
+                                <p> payment ID : '+dat.data.payment_id+'</p>');
 
                             $('#prePayment').modal('hide');
                             $('#chargingcompleted').modal('show');
@@ -232,7 +232,7 @@
 
 
     /**
-     * Load the order details from the database
+     * Fetch the order details from the database
      */
 
         function preapprovedOrders(){
