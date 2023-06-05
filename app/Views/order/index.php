@@ -134,6 +134,31 @@
                 </div>
 
 
+                <!--Refund Confirmation-->
+                <div class="modal fade refundConfirm" id="refundConfirm" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Refund Confirmation</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="hidden_pre_pay">
+
+                            </div>
+                            <label>Why do you refund the payment</label>
+
+                            <inpuy type="text" id="refundMessage" placeholder="Refund Message">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger toPrePaybtn" > Confirm Payment </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
 
 
 <?=$this->endSection()?>
@@ -296,11 +321,12 @@
 
                     $.each(data.data,function(key,value){
                         $('.payment_d_table').append('<tr>\
-                        <td class="payment_id">'+(value.payment_id)+'</td>\
-                        <td>'+(value.order_id)+'</td>\
+                        <td class="r_payment_id">'+(value.payment_id)+'</td>\
                         <td>'+(value.date)+'</td>\
                         <td>'+(value.description)+'</td>\
                         <td>'+(value.status)+'</td>\
+                        <td> <a href="#" class="badge btn btn-warning pay-refund">Refund</a>\
+                        </td>\
                         </tr>');
                     })
                     var nos=((data.data).length);
@@ -316,6 +342,30 @@
 
 
         })
+
+
+        /**
+         * - Refund order 
+         */
+
+         $(document).on('click','.pay-refund',function(){
+            $('#refundConfirm').modal('show');
+
+            var data={  "payment_id": $(this).closest('#r_payment_id').val(),
+                        "description":$('#refundMessage').val(),};
+
+            $.ajax({
+                method:"POST",
+                url:"paymentRefund",
+                data:data,
+                success:function(response){
+                        var data=JSON.parse(response);
+                        console.log(data);
+                }
+            })
+
+
+         })
 
 
 

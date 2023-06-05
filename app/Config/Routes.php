@@ -90,6 +90,7 @@ $routes->get('usercheck','LoginController::checkSession');
   $routes->post('orders/findSubscription','OrderController::findSubscription');
   $routes->post('orders/retrysub','OrderController::retrySub');
   $routes->post('orders/cancelSub','OrderController::cancelSub');
+  $routes->post('orders/paymentRefund','OrderController::paymentRefund');
 
 
 

@@ -407,6 +407,55 @@ class OrderController extends BaseController
         }
 
 
+        /**
+         * - Payment Refund 
+         */
+        public function paymentRefund(){
+
+
+            $access_t=$this->accessTokenGen();
+            $auth = 'Bearer '.$access_t;
+
+            $data=[
+                'payment_id' => $this->request->getVar('payment_id'),
+                'description'=>$this->request->getVar('description'),
+                'authorization_token'=>$access_t,
+            ];
+
+            $headers=array('Authorization:'.$auth,
+            'content-type: application/json');
+
+            $url = "https://sandbox.payhere.lk/merchant/v1/payment/refund";
+
+
+            $ch=curl_init();
+            curl_setopt($ch, CURLOPT_POST, TRUE);
+            curl_setopt($ch, CURLOPT_URL,$url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($data));
+
+            $response=curl_exec($ch);
+            curl_close($ch);
+
+            if (!$response) {
+                return FALSE;
+            } else {
+                return $response;
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+
     
 }
 
