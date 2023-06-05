@@ -117,7 +117,7 @@ class Order extends Model
             'merchant_id'=>$merchant_id,
             'return_url'=>'https://ci4ajax.herokuapp.com/client/index',
             'cancel_url'=>'https://ci4ajax.herokuapp.com/client/order_cancel',
-            'notify_url'=>'https://5757-119-235-8-202.ngrok-free.app/client/verifyOrder',
+            'notify_url'=>'https://b7b3-119-235-8-202.ngrok-free.app/client/verifyOrder',
             'first_name'=>$data['firstName'],
             'last_name'=>$data['lastName'],
             'email'=>$data['email'],
