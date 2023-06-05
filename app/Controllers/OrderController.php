@@ -70,9 +70,7 @@ class OrderController extends BaseController
         curl_close($cr);
 
         if($x){
-
-
-
+            
             return redirect()->to(base_url('client/index'));
 
         }else{
