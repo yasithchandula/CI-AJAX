@@ -17,7 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    //public string $baseURL = 'https://ci4ajax.herokuapp.com/';
+    public string $baseURL = 'https://ci4ajax.herokuapp.com/';
     //public string $baseURL = 'http://localhost:8080';
 
     /**
