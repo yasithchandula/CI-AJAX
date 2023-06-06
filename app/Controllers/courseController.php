@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Controllers;
-use App\Model\Course;
+use App\Controllers\BaseController;
+use App\Models\Course;
 
 class courseController extends BaseController{
 
@@ -16,40 +17,20 @@ class courseController extends BaseController{
      */
     public function store(){
 
-        $data=[
-            'cID'=>$this->request->getPost('cID'),
-            'Department'=>$this->request->getPost('department'),
-            'Course'=>$this->request->getPost('course'),
-            'fee'=>$this->request->getPost('fee'),
-
-        ];
-
-        $rules=[
-            'cID'=>['required',],
-            'Department'=>['required'],
-            'Course'=>['required'],
-            'fee'=>['required','decimal'],
-        ];
-        
-        if (! $this->validateData($data, $rules)) {
-            log_message('alert',implode(' ', [' ',$data['cID']]));
-
-            return $this->response->setJSON(['error'=>'course insertion unsuccessful']);
-
-        }else{
-            $course=new Course();
-
-            $x=$course->insert($data);
-            if($x){
-                $data=['status'=>'course Successfully Inserted'];
-                return $this->response->setJSON($data);
-            }
-            else{
-                return $this->response->setJSON($data);
-            };
+        $coursedata=$this->request->getVar();
 
 
+        $course=new Course();
+
+        if($course->storeCourse($coursedata))
+        {
+            return $this->response->setJSON(['status'=>'course Successfully Inserted']);
         }
+        else
+        {
+            return $this->response->setJSON(['status'=>'course insertion unsuccessfull']);
+        };
+
     }
 
     /**
@@ -60,6 +41,7 @@ class courseController extends BaseController{
 
         $course=new Course();
         $courses['course']=$course->findAll();
+        log_message('alert',json_encode($courses));
         return $this->response->setJSON($courses);
 
     }
@@ -68,10 +50,11 @@ class courseController extends BaseController{
      * fetch course data for edit
      */
     public function edit(){
+        $cID=$this->request->getPost('cID');
 
         $course=new Course();
-        $cID=$this->request->getPost('cID');
-        $data['course']=$course->find($cID);
+        $data=$course->editCourse($cID);
+
         return $this->response->setJSON($data);
 
     }
@@ -137,8 +120,6 @@ class courseController extends BaseController{
         }
         
         ;
-
-
 
     }
 }

@@ -5,6 +5,10 @@ namespace App\Filters;
 use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\Validation\Exceptions\ValidationException;
+use Config\Services;
+use CodeIgniter\HTTP\Response;
+
 
 class AuthFilter implements FilterInterface
 {
