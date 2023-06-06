@@ -205,7 +205,7 @@
 
         $('.capturePayment').on('hidden.bs.modal',function(){
             $('#cp_para').empty();
-        }).html('');
+        })
         
 
 
