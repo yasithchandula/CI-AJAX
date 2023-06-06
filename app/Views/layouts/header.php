@@ -33,6 +33,9 @@
                             <li>
                                 <a class="dropdown-item" href="<?=base_url('orders/subcription')?>">Subcriptions</a>
                             </li>
+                            <li>
+                                <a class="dropdown-item" id="nav_authorders" href="<?=base_url('orders/authorders')?>">Authorized Orders</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">

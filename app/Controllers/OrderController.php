@@ -456,6 +456,67 @@ class OrderController extends BaseController
         }
 
 
+
+        public function getAuthorders(){
+            
+            $order=new Order();
+
+            $res=$order->fetchAuthorders();
+
+            log_message('alert',"in Controller");
+
+            log_message('alert',json_encode($res));
+
+            return $this->response->setJSON($res);
+
+        }
+
+        public function AuthOrderIndex(){
+
+            return view ('order/authorder.php');
+
+        }
+
+
+        public function getauthtoken(){
+            $order_id=$this->request->getVar('order_id');
+            log_message('alert',json_encode($order_id));
+            $order=new Order();
+            $res=$order->fetchauthtoken($order_id);
+
+            return $this->response->setJSON($res);
+        }
+
+        public function capturePayment(){
+            $data= $this->request->getVar();
+
+            $access_t=$this->accessTokenGen();
+            $auth = 'Bearer '.$access_t;
+
+            $headers=array('Authorization:'.$auth,
+            'content-type: application/json');
+
+            $url="https://sandbox.payhere.lk/merchant/v1/payment/capture";
+
+            $ch=curl_init();
+            curl_setopt($ch, CURLOPT_POST, TRUE);
+            curl_setopt($ch, CURLOPT_URL,$url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($data));
+            $response=curl_exec($ch);
+            curl_close($ch);
+
+
+            if (!$response) {
+                return FALSE;
+            } else {
+                return $this->response->setJson($response);
+            }
+
+        }
+
+
     
 }
 

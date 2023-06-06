@@ -1,0 +1,125 @@
+INFO - 2023-06-06 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:00:57 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:00:57 --> in Controller
+ALERT - 2023-06-06 07:00:57 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:00:58 --> "240"
+ALERT - 2023-06-06 07:00:59 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}
+INFO - 2023-06-06 07:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:02:20 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:02:20 --> in Controller
+ALERT - 2023-06-06 07:02:20 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:02:20 --> "240"
+ALERT - 2023-06-06 07:02:22 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}
+INFO - 2023-06-06 07:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:02:36 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:02:36 --> in Controller
+ALERT - 2023-06-06 07:02:36 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:02:37 --> "240"
+ALERT - 2023-06-06 07:02:39 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}
+INFO - 2023-06-06 07:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:02:56 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:02:56 --> in Controller
+ALERT - 2023-06-06 07:02:56 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:02:56 --> "240"
+ALERT - 2023-06-06 07:02:58 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}
+INFO - 2023-06-06 07:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:09:48 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:09:48 --> in Controller
+ALERT - 2023-06-06 07:09:48 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:09:49 --> "240"
+ALERT - 2023-06-06 07:09:51 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:12:19 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:12:19 --> in Controller
+ALERT - 2023-06-06 07:12:19 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:12:27 --> "240"
+ALERT - 2023-06-06 07:12:29 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:13:14 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:13:14 --> in Controller
+ALERT - 2023-06-06 07:13:14 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:13:14 --> "240"
+ALERT - 2023-06-06 07:13:16 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:15:33 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:15:33 --> in Controller
+ALERT - 2023-06-06 07:15:33 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:15:34 --> "240"
+ALERT - 2023-06-06 07:15:36 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:16:07 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:16:07 --> in Controller
+ALERT - 2023-06-06 07:16:07 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:16:08 --> "240"
+ALERT - 2023-06-06 07:16:09 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:16:41 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:16:41 --> in Controller
+ALERT - 2023-06-06 07:16:41 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:16:41 --> "240"
+ALERT - 2023-06-06 07:16:43 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:17:12 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:17:12 --> in Controller
+ALERT - 2023-06-06 07:17:12 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:17:13 --> "240"
+ALERT - 2023-06-06 07:17:14 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:17:57 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:17:57 --> in Controller
+ALERT - 2023-06-06 07:17:57 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+INFO - 2023-06-06 07:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:18:05 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:18:05 --> in Controller
+ALERT - 2023-06-06 07:18:05 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:18:06 --> "240"
+ALERT - 2023-06-06 07:18:07 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:18:39 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:18:39 --> in Controller
+ALERT - 2023-06-06 07:18:39 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:18:40 --> "240"
+ALERT - 2023-06-06 07:18:41 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:19:21 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:19:21 --> in Controller
+ALERT - 2023-06-06 07:19:21 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:19:22 --> "240"
+ALERT - 2023-06-06 07:19:24 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:19:45 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:19:45 --> in Controller
+ALERT - 2023-06-06 07:19:45 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:19:46 --> "240"
+ALERT - 2023-06-06 07:19:47 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:28:47 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:28:47 --> in Controller
+ALERT - 2023-06-06 07:28:47 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+INFO - 2023-06-06 07:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:29:35 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:29:35 --> in Controller
+ALERT - 2023-06-06 07:29:35 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:29:36 --> "240"
+ALERT - 2023-06-06 07:29:37 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:36:13 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:36:13 --> in Controller
+ALERT - 2023-06-06 07:36:13 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully authorized VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:36:14 --> "240"
+ALERT - 2023-06-06 07:36:16 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:42:52 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully received the VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:42:52 --> in Controller
+ALERT - 2023-06-06 07:42:52 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully received the VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:43:04 --> "240"
+ALERT - 2023-06-06 07:43:09 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ALERT - 2023-06-06 07:49:49 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully received the VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:49:49 --> in Controller
+ALERT - 2023-06-06 07:49:49 --> [{"order_id":"240","order_title":"CDFS","amount":"4575","status_message":"Successfully received the VISA payment","authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe"}]
+ALERT - 2023-06-06 07:49:51 --> "240"
+ALERT - 2023-06-06 07:49:53 --> {"authorization_token":"92a5cd57-bf9b-409e-9f48-b5384af38cbe","amount":"4575"}
+INFO - 2023-06-06 07:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-06 07:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-06 07:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

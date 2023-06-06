@@ -350,5 +350,29 @@ class Order extends Model
 
 
 
+    public function fetchAuthorders(){
+
+        $builder=$this->db->table('orders');
+        $data=(array)$builder->select ('order_id,order_title,amount,status_message,authorization_token')
+        ->where('authorization_token IS NOT NULL')->get()->getResult();
+
+        log_message('alert',json_encode($data));
+
+        return $data;
+    }
+
+
+    public function fetchauthtoken($order_id){
+        $builder=$this->db->table('orders');
+
+        $data=(array)$builder->select('authorization_token,amount')->where('order_id',$order_id)->get()->getRow();
+        log_message('alert',json_encode($data));
+
+        return $data;
+    }
+
+
+
+
 
 }

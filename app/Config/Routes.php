@@ -91,6 +91,10 @@ $routes->get('usercheck','LoginController::checkSession');
   $routes->post('orders/retrysub','OrderController::retrySub');
   $routes->post('orders/cancelSub','OrderController::cancelSub');
   $routes->post('orders/paymentRefund','OrderController::paymentRefund');
+  $routes->get('orders/getauthorders','orderController::getAuthorders');
+  $routes->get('orders/authorders','orderController::AuthOrderIndex');
+  $routes->post('orders/getauthtoken','orderController::getAuthToken');
+  $routes->post('orders/capturepayment','orderController::capturePayment');
 
 
 

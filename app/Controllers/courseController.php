@@ -121,8 +121,6 @@ class courseController extends BaseController{
         
         ;
 
-
-
     }
 }
 
